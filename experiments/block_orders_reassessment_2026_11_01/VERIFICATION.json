@@ -1,0 +1,15 @@
+{
+  "selected_runs": 36,
+  "checked_states": 15685,
+  "maximum_absolute_discrepancies": {
+    "energy": 9.769962616701378e-15,
+    "normalized_energy": 3.170030969494586e-15,
+    "energy_maximum": 1.584995155956559e-15,
+    "chord_velocity": 4.440892098500626e-16,
+    "path_length": 8.881784197001252e-16,
+    "rod_length": 0.0
+  },
+  "checks": "Physical energy, run-initial normalized energy maximum, chord velocity, path, rod length.",
+  "source": "/home/blacknoir/Projects/constrained-xpbd/experiments/block_orders_2026_11_01/results",
+  "solver_executed": false
+}

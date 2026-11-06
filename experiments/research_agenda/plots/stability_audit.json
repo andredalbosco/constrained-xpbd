@@ -1,0 +1,98 @@
+{
+  "xpbd": {
+    "runs": 96,
+    "completed": 96,
+    "growth_or_failure": 0,
+    "maximum_absolute_energy_error": 1.0,
+    "maximum_substeps_per_step": 0.0,
+    "deepest": 0
+  },
+  "midpoint_4": {
+    "runs": 96,
+    "completed": 90,
+    "growth_or_failure": 16,
+    "maximum_absolute_energy_error": 469.5091513050697,
+    "maximum_substeps_per_step": 0.0,
+    "deepest": 0
+  },
+  "guarded_midpoint": {
+    "runs": 96,
+    "completed": 96,
+    "growth_or_failure": 0,
+    "maximum_absolute_energy_error": 3.5193204794836674e-08,
+    "maximum_substeps_per_step": 55.5625,
+    "deepest": 7
+  },
+  "nominal_equivalence": [
+    {
+      "case": "spring_release",
+      "hz": "480",
+      "duration": "60",
+      "steps": "28800",
+      "rejections": "0",
+      "max_state_difference": "0",
+      "max_rx": "1.1100874993535959e-16",
+      "max_constitutive": "1.1102230246251565e-16"
+    },
+    {
+      "case": "spring_orbit",
+      "hz": "480",
+      "duration": "60",
+      "steps": "28800",
+      "rejections": "0",
+      "max_state_difference": "0",
+      "max_rx": "1.1415942790113172e-16",
+      "max_constitutive": "1.6653345369377348e-16"
+    },
+    {
+      "case": "pendulum_rest",
+      "hz": "480",
+      "duration": "60",
+      "steps": "28800",
+      "rejections": "0",
+      "max_state_difference": "0",
+      "max_rx": "7.8179230228534198e-17",
+      "max_constitutive": "2.2204460492503131e-16"
+    },
+    {
+      "case": "pendulum_kick",
+      "hz": "480",
+      "duration": "60",
+      "steps": "28800",
+      "rejections": "0",
+      "max_state_difference": "0",
+      "max_rx": "7.4964912518143189e-17",
+      "max_constitutive": "2.2204460492503131e-16"
+    },
+    {
+      "case": "double_small",
+      "hz": "480",
+      "duration": "60",
+      "steps": "28800",
+      "rejections": "0",
+      "max_state_difference": "0",
+      "max_rx": "2.475204480168377e-16",
+      "max_constitutive": "5.4123372450476381e-16"
+    },
+    {
+      "case": "double_large",
+      "hz": "480",
+      "duration": "60",
+      "steps": "28800",
+      "rejections": "0",
+      "max_state_difference": "0",
+      "max_rx": "2.6460289650497776e-16",
+      "max_constitutive": "5.5511151231257827e-16"
+    },
+    {
+      "case": "double_mixed",
+      "hz": "480",
+      "duration": "60",
+      "steps": "28800",
+      "rejections": "0",
+      "max_state_difference": "0",
+      "max_rx": "2.5289405258284076e-16",
+      "max_constitutive": "5.0653925498522767e-16"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-31T18:41:01.587281+00:00",
+  "trajectory_runs": 1195,
+  "complete": 1080,
+  "failed": 115,
+  "zero_step_rms_unavailable": 24,
+  "viewer_series": 12,
+  "viewer_bounds_samples_all_magnifications": 110400,
+  "viewer_javascript_syntax": "pass",
+  "run_all_shell_syntax": "pass",
+  "interactive_playback": "not verified; supported browser unavailable; fallback approval rejected in parent task",
+  "native_video": {
+    "manifest": "animation/manifest.json",
+    "video": "animation/modal_transfer_60s.mp4",
+    "montage": "animation/representative_frames.png",
+    "duration_seconds": 60,
+    "frame_count": 1800,
+    "angle_magnification": 16,
+    "playback_speed": 1,
+    "full_decode": "pass",
+    "representative_frames": "visually inspected",
+    "video_sha256": "d6cd9c688d9fcfeec08e75132c329f9757a28c4968c39cdf45c5dfa16fa9b43c"
+  },
+  "cmake_standalone_defaults": "canonical repository composition and round2 experiment directories"
+}

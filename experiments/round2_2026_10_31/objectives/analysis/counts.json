@@ -1,0 +1,12 @@
+{
+  "variants": 22,
+  "local_cases": 660,
+  "dense_scalar_cases": 200,
+  "trajectories": 350,
+  "full_trajectories": 350,
+  "certified_full_trajectories": 337,
+  "trajectories_with_unconverged_steps": 9,
+  "near_rest_trajectories": 60,
+  "moving_angle_probes": 600,
+  "rod_kinematic_probes": 60
+}

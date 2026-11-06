@@ -1,0 +1,2 @@
+# Preserve numerical CSV bytes, including quoted messages and CRLF endings.
+*.csv -text -whitespace

@@ -1,0 +1,17 @@
+{
+  "viewed": [
+    "implicit_candidates.png",
+    "recommended_candidate.png",
+    "moving_and_coupled.png",
+    "angular_compliance.png",
+    "stability_and_cost.png"
+  ],
+  "verified": [
+    "Energy excludes reservoirs",
+    "Motion panels label which coordinate is shown",
+    "RMS covers both coordinates and both double-spring masses",
+    "Legend distinguishes work strength and angular compliance",
+    "Stability screen and scalar-visit cost are explicit",
+    "Physical damping is stated in the candidate figure"
+  ]
+}

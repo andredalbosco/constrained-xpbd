@@ -1,0 +1,59 @@
+{
+  "discrete_chain_rule_max_error": 1.4210854715202004e-14,
+  "cases": {
+    "spring": {
+      "max_step_energy": 1.8263168755083825e-14,
+      "max_residual": 1.0407848379088084e-16,
+      "max_length": 0.0,
+      "max_tangency": 0.0,
+      "nfev": 1601,
+      "reversal_error": 0.0,
+      "reference_refinement_gap": 1.2258927815518134e-11,
+      "two_second_step_refinement": [
+        {
+          "h": 0.1,
+          "position": 0.06126634783949237,
+          "velocity": 0.41262402983622803
+        },
+        {
+          "h": 0.05,
+          "position": 0.01785790555731252,
+          "velocity": 0.09515191000907956
+        },
+        {
+          "h": 0.025,
+          "position": 0.004626275369997984,
+          "velocity": 0.02310831654549887
+        }
+      ]
+    },
+    "pendulum": {
+      "max_step_energy": 1.4488410471358293e-14,
+      "max_residual": 8.055622141567298e-17,
+      "max_length": 1.1102230246251565e-16,
+      "max_tangency": 1.1102230246251565e-16,
+      "nfev": 1200,
+      "reversal_error": 6.473657049138938e-16,
+      "reference_refinement_gap": 6.473548900082511e-12,
+      "two_second_step_refinement": [
+        {
+          "h": 0.1,
+          "position": 0.023392221537490588,
+          "velocity": 0.07852927392751452
+        },
+        {
+          "h": 0.05,
+          "position": 0.005808453233074286,
+          "velocity": 0.019879618957425394
+        },
+        {
+          "h": 0.025,
+          "position": 0.0014494645017213447,
+          "velocity": 0.004985490488237544
+        }
+      ]
+    }
+  },
+  "forced_failure_residual": 0.13625417358985598,
+  "angular_control_cartesian_midpoint_gap": 0.0007587350491929932
+}

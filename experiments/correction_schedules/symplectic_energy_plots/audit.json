@@ -1,0 +1,11 @@
+{
+  "short_runs": 384,
+  "long_runs": 192,
+  "trace_groups": 48,
+  "max_scaled_energy_reconstruction_error": 1.4685246675470795e-14,
+  "max_position_RMS_discrepancy": 4.440892098500626e-16,
+  "short_explicit_stops": 7,
+  "long_explicit_stops": 0,
+  "all_baselines_completed": true,
+  "all_recorded_correction_caps_respected": true
+}

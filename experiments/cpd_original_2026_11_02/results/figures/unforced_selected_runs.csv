@@ -1,0 +1,10 @@
+case,column,source,run_id
+release,Full CPD: P / L / E,/home/blacknoir/Global/constrained-xpbd-cpd-original-2026-11-02/results,free_release_CPD_fixed16_hz60_eps1e+08
+release,Angular-row ablation: P / E,/home/blacknoir/Global/constrained-xpbd-cpd-original-2026-11-02/angular_ablation,free_release_CPD_fixed16_hz60_eps1e+08_noL
+release,Independent-v LE · βᵥ=1,/home/blacknoir/Projects/constrained-xpbd/experiments/independent_velocity_2026_11_01/results,spring_release_LE_beta1_hz60_s16_eps1e+08
+orbit,Full CPD: P / L / E,/home/blacknoir/Global/constrained-xpbd-cpd-original-2026-11-02/results,free_orbit_CPD_fixed16_hz60_eps1e+08
+orbit,Angular-row ablation: P / E,/home/blacknoir/Global/constrained-xpbd-cpd-original-2026-11-02/angular_ablation,free_orbit_CPD_fixed16_hz60_eps1e+08_noL
+orbit,Independent-v LE · βᵥ=1,/home/blacknoir/Projects/constrained-xpbd/experiments/independent_velocity_2026_11_01/results,spring_orbit_LE_beta1_hz60_s16_eps1e+08
+stiff,Full CPD: P / L / E,/home/blacknoir/Global/constrained-xpbd-cpd-original-2026-11-02/results,free_stiff_CPD_fixed16_hz60_eps1e+08
+stiff,Angular-row ablation: P / E,/home/blacknoir/Global/constrained-xpbd-cpd-original-2026-11-02/angular_ablation,free_stiff_CPD_fixed16_hz60_eps1e+08_noL
+stiff,Independent-v LE · βᵥ=1,/home/blacknoir/Projects/constrained-xpbd/experiments/independent_velocity_2026_11_01/results,spring_stiff_LE_beta1_hz60_s16_eps1e+08

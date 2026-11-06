@@ -1,0 +1,384 @@
+{
+  "short": {
+    "groups": 147,
+    "rows": 705747,
+    "max_energy_reconstruction": 0.0,
+    "max_rms_reconstruction": 3.3306690738754696e-16,
+    "max_energy_gain": 0.0,
+    "max_ledger_error": 9.515592853448482e-13,
+    "max_kinematic_error": 4.440892098500626e-16
+  },
+  "long": {
+    "groups": 147,
+    "rows": 523555,
+    "max_energy_reconstruction": 0.0,
+    "max_rms_reconstruction": 0.0,
+    "max_energy_gain": 0.0,
+    "max_ledger_error": 2.1605993184888905e-12,
+    "max_kinematic_error": 0.0
+  },
+  "short_runs": 798,
+  "long_runs": 147,
+  "stability": {
+    "xpbd": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "xpbd_4": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "EL_soft_10": {
+      "one_second_completed": 90,
+      "ten_second_completed": 86,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 1.9872836154530655e-11
+    },
+    "LE_soft_10": {
+      "one_second_completed": 81,
+      "ten_second_completed": 76,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "EL_angular_10": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "LE_angular_10": {
+      "one_second_completed": 93,
+      "ten_second_completed": 93,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "work_soft_10": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "work_angular": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "work_repay": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "work_repay_angular": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_s1_tau005": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_s1_tau025": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_s1_tau100": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_s10_tau005": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_s10_tau100": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_s100_tau005": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_s100_tau025": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_s100_tau100": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_soft_01": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_soft_1": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    },
+    "workL_soft_10": {
+      "one_second_completed": 96,
+      "ten_second_completed": 96,
+      "per_duration_runs": 96,
+      "max_accepted_energy_gain": 0.0
+    }
+  },
+  "short_failures": [
+    {
+      "case": "spring_orbit",
+      "method": "EL_soft_01",
+      "hz": 240.0,
+      "completed": 1559.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "EL_soft_1",
+      "hz": 240.0,
+      "completed": 1410.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "EL_soft_10",
+      "hz": 240.0,
+      "completed": 1410.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "EL_soft_100",
+      "hz": 240.0,
+      "completed": 1411.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "LE_soft_01",
+      "hz": 240.0,
+      "completed": 1555.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "LE_soft_1",
+      "hz": 240.0,
+      "completed": 1549.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "LE_soft_10",
+      "hz": 240.0,
+      "completed": 1549.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "LE_soft_100",
+      "hz": 240.0,
+      "completed": 1549.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "EL_stiffness_gate",
+      "hz": 240.0,
+      "completed": 1410.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "EL_GS4",
+      "hz": 240.0,
+      "completed": 1549.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "EL_outer4",
+      "hz": 240.0,
+      "completed": 1549.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "LE_stiffness_gate",
+      "hz": 240.0,
+      "completed": 1549.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "LE_GS4",
+      "hz": 240.0,
+      "completed": 1549.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "LE_outer4",
+      "hz": 240.0,
+      "completed": 1549.0,
+      "steps": 2400.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "LE_local_target",
+      "hz": 240.0,
+      "completed": 1549.0,
+      "steps": 2400.0
+    }
+  ],
+  "long_failures": [
+    {
+      "case": "spring_orbit",
+      "method": "EL_soft_10",
+      "completed": 5482.0,
+      "steps": 28800.0
+    },
+    {
+      "case": "spring_orbit",
+      "method": "LE_soft_10",
+      "completed": 5770.0,
+      "steps": 28800.0
+    }
+  ],
+  "baseline_reproduction_error": 0.0,
+  "default_candidate": "workL_s1_tau005",
+  "default_candidate_short_improvements": 21,
+  "default_candidate_rms_ratios": [
+    {
+      "case": "spring_release",
+      "hz": 240,
+      "rms_ratio": 0.05222303460633904
+    },
+    {
+      "case": "spring_release",
+      "hz": 480,
+      "rms_ratio": 0.0661076112685682
+    },
+    {
+      "case": "spring_release",
+      "hz": 960,
+      "rms_ratio": 0.0820877177678273
+    },
+    {
+      "case": "spring_orbit",
+      "hz": 240,
+      "rms_ratio": 0.1128943485802842
+    },
+    {
+      "case": "spring_orbit",
+      "hz": 480,
+      "rms_ratio": 0.09069860144175042
+    },
+    {
+      "case": "spring_orbit",
+      "hz": 960,
+      "rms_ratio": 0.08173834730133842
+    },
+    {
+      "case": "pendulum_rest",
+      "hz": 240,
+      "rms_ratio": 0.4369385088789803
+    },
+    {
+      "case": "pendulum_rest",
+      "hz": 480,
+      "rms_ratio": 0.4133245983571078
+    },
+    {
+      "case": "pendulum_rest",
+      "hz": 960,
+      "rms_ratio": 0.40079193860834855
+    },
+    {
+      "case": "pendulum_kick",
+      "hz": 240,
+      "rms_ratio": 0.4647778176974216
+    },
+    {
+      "case": "pendulum_kick",
+      "hz": 480,
+      "rms_ratio": 0.4445256723456269
+    },
+    {
+      "case": "pendulum_kick",
+      "hz": 960,
+      "rms_ratio": 0.4338760603087096
+    },
+    {
+      "case": "double_small",
+      "hz": 240,
+      "rms_ratio": 0.12321426561641309
+    },
+    {
+      "case": "double_small",
+      "hz": 480,
+      "rms_ratio": 0.11965614889124539
+    },
+    {
+      "case": "double_small",
+      "hz": 960,
+      "rms_ratio": 0.12204032084400114
+    },
+    {
+      "case": "double_large",
+      "hz": 240,
+      "rms_ratio": 0.8627358946795795
+    },
+    {
+      "case": "double_large",
+      "hz": 480,
+      "rms_ratio": 0.7934539371784993
+    },
+    {
+      "case": "double_large",
+      "hz": 960,
+      "rms_ratio": 0.7270382806332902
+    },
+    {
+      "case": "double_mixed",
+      "hz": 240,
+      "rms_ratio": 0.41938501540636186
+    },
+    {
+      "case": "double_mixed",
+      "hz": 480,
+      "rms_ratio": 0.3549910405355234
+    },
+    {
+      "case": "double_mixed",
+      "hz": 960,
+      "rms_ratio": 0.3577494955350559
+    }
+  ],
+  "long_uncertified_cases": [
+    "double_large"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source": "/tmp/xpbd-correction-schedules/independent_direction_holdout.csv",
+  "sha256": "8816a267a3332d2d8abfd2e6b9002f9d4449838d105bb897d8cd7955a3f11b67",
+  "rows": 90,
+  "speed_fractions": [
+    0.1,
+    0.24120907566221078,
+    0.5,
+    0.75,
+    1.0,
+    1.25
+  ],
+  "substeps": [
+    4,
+    8,
+    16,
+    32,
+    128
+  ],
+  "missing_final_L_and_angle": "NaN fields for ordinary and LE methods are not plotted or imputed.",
+  "angular_normalization": "100 max_abs_angular_error / (1.1*sqrt(11)*speed_fraction)",
+  "scope": "Single spring mass, no gravity; altered-direction diagnostic is separate from unchanged-equation schedules."
+}

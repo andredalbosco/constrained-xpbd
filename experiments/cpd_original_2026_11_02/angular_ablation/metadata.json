@@ -1,0 +1,261 @@
+{
+  "command": [
+    "runner.py",
+    "--cases",
+    "free_release",
+    "--hz",
+    "60",
+    "--epsilon-ratios",
+    "100000000",
+    "--policies",
+    "fixed",
+    "--without-angular",
+    "--output",
+    "angular_ablation",
+    "--resume"
+  ],
+  "python": "3.13.7",
+  "numpy": "2.5.4",
+  "solver_sha256": "e9440a7152a89edc940486af38ddd875fd320aff9dda25e24538205343f3c223",
+  "actual_energy": "K + elastic - sum external_constant_force dot x",
+  "algorithm_energy": "H = K + elastic",
+  "target": "Hstar = incoming H + h sum f dot incoming v",
+  "relaxation": "H = (1-rho) Hstar + rho Kstar; rho unbounded",
+  "epsilon": "epsilon_ratio times initial mechanical energy above potential floor, fixed per run; local experimental choices",
+  "velocity": "derived from endpoint difference; never independent",
+  "stopping": "paper: raw allconstraint max<=1e-4 after at least one global step; fixed:16; stationary:fullscaled KKT<=1e-9, max200",
+  "anchored": "P row disabled, L about fixed origin retained; explicit anchored adaptation",
+  "hard_rod": "explicit global hard-distance row extension, not paper finite-spring model",
+  "pd_control": "unconstrained finite-spring PD; conservation rows/targets are diagnostic only; no Schur rank defects are counted",
+  "angular_ablation": "row disabled while Kstar held unchanged",
+  "baseline_source": "/home/blacknoir/Projects/constrained-xpbd/experiments/independent_velocity_2026_11_01/results",
+  "baseline_reused_without_rerun": true,
+  "scenes": [
+    {
+      "name": "free_release",
+      "masses": [
+        2.0,
+        2.0
+      ],
+      "x0": [
+        [
+          0.625,
+          0.0
+        ],
+        [
+          -0.625,
+          -0.0
+        ]
+      ],
+      "v0": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "forces": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "edges": [
+        {
+          "a": 0,
+          "b": 1,
+          "rest": 1.0,
+          "stiffness": 100.0,
+          "hard": false
+        }
+      ],
+      "family": "free",
+      "energy_floor": -0.0,
+      "characteristic_length": 1.0,
+      "reference_case": "spring_release"
+    },
+    {
+      "name": "spring_orbit",
+      "masses": [
+        1.0
+      ],
+      "x0": [
+        [
+          1.1,
+          0.0
+        ]
+      ],
+      "v0": [
+        [
+          0.0,
+          0.8
+        ]
+      ],
+      "forces": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "edges": [
+        {
+          "a": 0,
+          "b": -1,
+          "rest": 1.0,
+          "stiffness": 100.0,
+          "hard": false
+        }
+      ],
+      "family": "anchored",
+      "energy_floor": -0.0,
+      "characteristic_length": 1.0,
+      "reference_case": "spring_orbit"
+    },
+    {
+      "name": "free_orbit",
+      "masses": [
+        2.0,
+        2.0
+      ],
+      "x0": [
+        [
+          0.55,
+          0.0
+        ],
+        [
+          -0.55,
+          -0.0
+        ]
+      ],
+      "v0": [
+        [
+          0.0,
+          0.4
+        ],
+        [
+          -0.0,
+          -0.4
+        ]
+      ],
+      "forces": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "edges": [
+        {
+          "a": 0,
+          "b": 1,
+          "rest": 1.0,
+          "stiffness": 100.0,
+          "hard": false
+        }
+      ],
+      "family": "free",
+      "energy_floor": -0.0,
+      "characteristic_length": 1.0,
+      "reference_case": "spring_orbit"
+    },
+    {
+      "name": "spring_stiff",
+      "masses": [
+        1.0
+      ],
+      "x0": [
+        [
+          1.1,
+          0.0
+        ]
+      ],
+      "v0": [
+        [
+          0.0,
+          0.8
+        ]
+      ],
+      "forces": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "edges": [
+        {
+          "a": 0,
+          "b": -1,
+          "rest": 1.0,
+          "stiffness": 1000.0,
+          "hard": false
+        }
+      ],
+      "family": "anchored",
+      "energy_floor": -0.0,
+      "characteristic_length": 1.0,
+      "reference_case": "spring_stiff"
+    },
+    {
+      "name": "free_stiff",
+      "masses": [
+        2.0,
+        2.0
+      ],
+      "x0": [
+        [
+          0.55,
+          0.0
+        ],
+        [
+          -0.55,
+          -0.0
+        ]
+      ],
+      "v0": [
+        [
+          0.0,
+          0.4
+        ],
+        [
+          -0.0,
+          -0.4
+        ]
+      ],
+      "forces": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "edges": [
+        {
+          "a": 0,
+          "b": 1,
+          "rest": 1.0,
+          "stiffness": 1000.0,
+          "hard": false
+        }
+      ],
+      "family": "free",
+      "energy_floor": -0.0,
+      "characteristic_length": 1.0,
+      "reference_case": "spring_stiff"
+    }
+  ],
+  "skipped": [],
+  "iteration_mean": "total solver iterations divided by attempted timesteps, including a rejected final attempt"
+}

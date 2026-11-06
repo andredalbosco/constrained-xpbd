@@ -1,0 +1,8 @@
+{
+  "trajectories": 1110,
+  "status": {
+    "complete": 1049,
+    "failed": 61
+  },
+  "uncertified_reference_rows": 42
+}

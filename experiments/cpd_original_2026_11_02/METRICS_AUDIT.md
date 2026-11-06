@@ -1,0 +1,314 @@
+# Independent saved-data audit
+
+Mechanical energy, paper internal energy, incoming-force work targets, kinetic
+references, relaxed energy rows, and their cumulative budget decomposition are
+reconstructed from saved state arrays without invoking a production solver.
+The physical-energy change is start-point work minus exact external work, plus
+energy relaxation and accumulated constraint defects. These terms are kept
+separate; a small relaxed-row residual is not automatically physical-energy
+conservation.
+
+Counts are split by family. Full-free-body finite-spring tests are distinct from
+anchored adaptations and exact hard-rod extensions. Finite completion is distinct
+from paper conservation convergence and full KKT stationarity. Failed candidates
+remain in all-trial energy maxima; accepted-prefix maxima and final accepted
+energies exclude them. Mean iterations use attempted steps, including rejection.
+
+Every finite-spring endpoint stationarity norm is reconstructed using the signed
+fresh conservation multipliers. Hard-rod endpoint CSVs retain only the magnitude
+of their geometry multiplier: both possible signs are checked for consistency,
+without claiming a uniquely reconstructed signed stationarity vector. Serialized
+first-step traces retain full signed multipliers and are checked directly.
+
+Dense first-step checks use each actual previous saved state. Ill-conditioned
+Schur systems above condition 1e10 retain their direct dense discrepancies as
+diagnostics rather than treating rounded dense solutions as an exact oracle.
+No pseudoinverse, row repair, damping, or numerical rollout is used by this audit.
+
+```bash
+OPENBLAS_NUM_THREADS=1 python3 metrics_audit.py --all-campaigns
+```
+
+The JSON receipt includes per-family linear residuals and dense comparisons,
+all primary/control counts, and the worst accepted compliant-pendulum budget.
+Internal block maxima, rank-detection thresholds, and CPU timings cannot be
+fully reconstructed from endpoint CSVs and remain instrumented diagnostics.
+
+```json
+{
+  "campaigns": [
+    {
+      "counts": {
+        "completed": 330,
+        "failed": 21,
+        "runs": 351
+      },
+      "families": {
+        "anchored": {
+          "completed": 162,
+          "failed": 0,
+          "runs": 162
+        },
+        "free": {
+          "completed": 135,
+          "failed": 0,
+          "runs": 135
+        },
+        "hard_rod_extension": {
+          "completed": 33,
+          "failed": 21,
+          "runs": 54
+        }
+      },
+      "hard_unsigned_endpoint_rows": 10871,
+      "source": "/home/blacknoir/Global/constrained-xpbd-cpd-original-2026-11-02/results",
+      "trace_diagnostics": {
+        "anchored/CPD": {
+          "dense_singular_visits": 0,
+          "ill_conditioned_visits": 2,
+          "max_constraint_linear_residual": 2.0215358448473025e-09,
+          "max_dense_multiplier_error": 9.466764180762536e-07,
+          "max_dense_state_error": 9.46553200593906e-07,
+          "max_stationarity_linear_residual": 7.313616169707874e-06,
+          "visits": 8402
+        },
+        "free/CPD": {
+          "dense_singular_visits": 0,
+          "ill_conditioned_visits": 0,
+          "max_constraint_linear_residual": 6.295708845563411e-16,
+          "max_dense_multiplier_error": 1.0971588602888203e-13,
+          "max_dense_state_error": 6.701975145985165e-16,
+          "max_stationarity_linear_residual": 7.124133335592439e-13,
+          "visits": 1095
+        },
+        "hard_rod_extension/CPD": {
+          "dense_singular_visits": 0,
+          "ill_conditioned_visits": 1744,
+          "max_constraint_linear_residual": 0.00016291117540259367,
+          "max_dense_multiplier_error": 0.5515011606154561,
+          "max_dense_state_error": 0.501503474239939,
+          "max_stationarity_linear_residual": 0.019765408149972075,
+          "visits": 3136
+        }
+      },
+      "trace_visits": 12633,
+      "trajectory_rows": 115172,
+      "worst_accepted_compliant_pendulum": {
+        "completed": 1,
+        "constraint_defect": 2018.7624858952365,
+        "energy_scale": 1.4992034538316972,
+        "identity_error": -2.2737367544323206e-13,
+        "max_accepted_rel_energy": 1355.2801099625103,
+        "mechanical_energy_change": 2031.8406217651977,
+        "relaxation": -8.248354379119186e-11,
+        "run_id": "pendulum_kick_compliant_CPD_paper200_hz30_eps1e+08",
+        "time": 0.3333333333333333,
+        "work_approximation": 13.07813587004385
+      }
+    },
+    {
+      "counts": {
+        "completed": 33,
+        "failed": 0,
+        "runs": 33
+      },
+      "families": {
+        "anchored": {
+          "completed": 18,
+          "failed": 0,
+          "runs": 18
+        },
+        "free": {
+          "completed": 15,
+          "failed": 0,
+          "runs": 15
+        }
+      },
+      "hard_unsigned_endpoint_rows": 0,
+      "source": "/home/blacknoir/Global/constrained-xpbd-cpd-original-2026-11-02/pd_control",
+      "trace_diagnostics": {
+        "anchored/PD": {
+          "dense_singular_visits": 0,
+          "ill_conditioned_visits": 0,
+          "max_constraint_linear_residual": 1.0,
+          "max_dense_multiplier_error": 0.0,
+          "max_dense_state_error": 1.0587499293714892e-16,
+          "max_stationarity_linear_residual": 1.6395773627664312e-12,
+          "visits": 288
+        },
+        "free/PD": {
+          "dense_singular_visits": 0,
+          "ill_conditioned_visits": 0,
+          "max_constraint_linear_residual": 1.0,
+          "max_dense_multiplier_error": 0.0,
+          "max_dense_state_error": 7.510978303949729e-17,
+          "max_stationarity_linear_residual": 7.531752999057062e-13,
+          "visits": 240
+        }
+      },
+      "trace_visits": 528,
+      "trajectory_rows": 11583,
+      "worst_accepted_compliant_pendulum": {
+        "completed": 1,
+        "constraint_defect": -1.6939690307439688,
+        "energy_scale": 2.0052297412337614,
+        "identity_error": -2.220446049250313e-16,
+        "max_accepted_rel_energy": 0.835204598590763,
+        "mechanical_energy_change": -1.6747771011094033,
+        "relaxation": 0.0,
+        "run_id": "pendulum_release_compliant_PD_fixed16_hz30_eps10000",
+        "time": 5.0,
+        "work_approximation": 0.01919192963456573
+      }
+    },
+    {
+      "counts": {
+        "completed": 5,
+        "failed": 0,
+        "runs": 5
+      },
+      "families": {
+        "anchored": {
+          "completed": 2,
+          "failed": 0,
+          "runs": 2
+        },
+        "free": {
+          "completed": 3,
+          "failed": 0,
+          "runs": 3
+        }
+      },
+      "hard_unsigned_endpoint_rows": 0,
+      "source": "/home/blacknoir/Global/constrained-xpbd-cpd-original-2026-11-02/angular_ablation",
+      "trace_diagnostics": {
+        "anchored/CPD": {
+          "dense_singular_visits": 0,
+          "ill_conditioned_visits": 0,
+          "max_constraint_linear_residual": 9.470455606366507e-17,
+          "max_dense_multiplier_error": 2.220446049250313e-16,
+          "max_dense_state_error": 1.1356971382576545e-16,
+          "max_stationarity_linear_residual": 3.653723067459534e-13,
+          "visits": 32
+        },
+        "free/CPD": {
+          "dense_singular_visits": 0,
+          "ill_conditioned_visits": 0,
+          "max_constraint_linear_residual": 1.0941378896363127e-16,
+          "max_dense_multiplier_error": 3.45824202051629e-16,
+          "max_dense_state_error": 8.02884595521537e-17,
+          "max_stationarity_linear_residual": 3.65372306745959e-13,
+          "visits": 48
+        }
+      },
+      "trace_visits": 80,
+      "trajectory_rows": 1505,
+      "worst_accepted_compliant_pendulum": null
+    }
+  ],
+  "checks": 6568196,
+  "largest_scaled_errors": {
+    "conditioned serialized NEW multiplier": 4.757202284922542e-07,
+    "conditioned serialized dense global correction": 4.908962357503372e-07,
+    "derived backward velocity": 0.0,
+    "fixed dimensional epsilon": 0.0,
+    "incoming linear target error": 0.0,
+    "incoming-origin angular target error": 0.0,
+    "independent endpoint KKT scale": 1.1809906082036132e-09,
+    "independent endpoint raw constraints": 1.1266562769535193e-13,
+    "independent endpoint scaled constraints": 1.2501848514756553e-13,
+    "independent fresh endpoint multiplier stationarity": 9.502930865599958e-15,
+    "initial internal energy": 0.0,
+    "initial mechanical energy": 0.0,
+    "initial mechanical energy scale": 0.0,
+    "serialized fresh objective gradient": 5.53335155473178e-13,
+    "serialized refreshed true conservation constraints": 0.0,
+    "summary accepted_time": 0.0,
+    "summary completed": 0.0,
+    "summary converged_fraction": 0.0,
+    "summary final_angular": 0.0,
+    "summary final_radial_kinetic": 0.0,
+    "summary final_rel_energy": 0.0,
+    "summary final_rotational_kinetic": 0.0,
+    "summary final_shape_kinetic": 0.0,
+    "summary final_tangential_kinetic": 0.0,
+    "summary initial_angular": 0.0,
+    "summary longest_stall_duration": 0.0,
+    "summary max_abs_eta": 0.0,
+    "summary max_abs_rho": 0.0,
+    "summary max_accepted_displacement": 0.0,
+    "summary max_accepted_rel_energy": 0.0,
+    "summary max_algorithm_budget_defect": 0.0,
+    "summary max_algorithm_target_defect": 0.0,
+    "summary max_angular_drift": 0.0,
+    "summary max_angular_target_error": 0.0,
+    "summary max_condition": 0.0,
+    "summary max_geometry_error": 0.0,
+    "summary max_kkt_scaled": 0.0,
+    "summary max_linear_target_error": 0.0,
+    "summary max_mechanical_budget_identity_error": 8.347541538535004e-17,
+    "summary max_raw_constraints": 0.0,
+    "summary max_rel_energy": 0.0,
+    "summary max_relaxed_budget_defect": 1.1099910831813967e-16,
+    "summary max_relaxed_target_defect": 0.0,
+    "summary max_rho": 0.0,
+    "summary max_scaled_constraints": 0.0,
+    "summary max_stationarity": 0.0,
+    "summary max_tangency_error": 0.0,
+    "summary max_work_approximation_defect": 0.0,
+    "summary mean_iterations": 0.0,
+    "summary min_rho": 0.0,
+    "summary min_schur_rank": 0.0,
+    "summary path_length": 0.0,
+    "summary rank_defect_steps": 0.0,
+    "summary solver_iterations": 0.0,
+    "summary stationary_fraction": 0.0,
+    "summary tail_path_length": 0.0,
+    "summary tail_stalled": 0.0,
+    "trajectory algorithm_budget": 0.0,
+    "trajectory algorithm_budget_defect": 8.881784197001252e-16,
+    "trajectory algorithm_target": 2.4622756278000357e-16,
+    "trajectory algorithm_target_defect": 8.881784197001252e-16,
+    "trajectory body mode angular_global": 0.0,
+    "trajectory body mode angular_internal": 0.0,
+    "trajectory body mode center_vx": 0.0,
+    "trajectory body mode center_vy": 0.0,
+    "trajectory body mode center_x": 0.0,
+    "trajectory body mode center_y": 0.0,
+    "trajectory body mode linear_px": 0.0,
+    "trajectory body mode linear_py": 0.0,
+    "trajectory body mode mode_length": 0.0,
+    "trajectory body mode radial_kinetic": 5.551115123125783e-17,
+    "trajectory body mode relative_kinetic": 0.0,
+    "trajectory body mode rotational_min_kinetic": 1.1102230246251565e-16,
+    "trajectory body mode shape_kinetic": 2.0863081570227085e-16,
+    "trajectory body mode tangential_kinetic": 1.1102230246251565e-16,
+    "trajectory cumulative_constraint_defect": 8.881784197001252e-16,
+    "trajectory cumulative_exact_work": 0.0,
+    "trajectory cumulative_paper_work": 0.0,
+    "trajectory cumulative_relaxation": 2.0122792321330962e-16,
+    "trajectory elastic": 2.5095378919306853e-16,
+    "trajectory energy": 2.4622756278000357e-16,
+    "trajectory exact_external_work": 0.0,
+    "trajectory geometry": 0.0,
+    "trajectory internal_energy": 2.4622756278000357e-16,
+    "trajectory kinetic": 4.0805939677631373e-16,
+    "trajectory kstar": 2.220446049250313e-16,
+    "trajectory max_edge_length": 0.0,
+    "trajectory mechanical_budget_identity_error": 1.5543122344752192e-15,
+    "trajectory min_edge_length": 0.0,
+    "trajectory nominal_length_error": 0.0,
+    "trajectory paper_work": 0.0,
+    "trajectory rel_energy": 7.91033905045424e-16,
+    "trajectory relaxed_algorithm_budget": 2.220446049250313e-16,
+    "trajectory relaxed_budget_defect": 8.881784197001252e-16,
+    "trajectory relaxed_target": 2.4622783981732565e-16,
+    "trajectory relaxed_target_defect": 8.881784197001252e-16,
+    "trajectory tangency": 0.0,
+    "trajectory work_approximation_defect": 0.0,
+    "unsigned hard-multiplier endpoint stationarity consistency only": 1.1809906082036132e-09
+  },
+  "numerical_solver_executed": false,
+  "status": "passed"
+}
+```

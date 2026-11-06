@@ -1,0 +1,18 @@
+{
+  "checks": 240,
+  "passed": 240,
+  "maximum_errors": {
+    "balance_error": 7.81898392945043e-13,
+    "full_kkt_error": 5.486284466719292e-13,
+    "cycle_stationarity": 8.820910575713741e-14,
+    "permutation_error": 3.7232498761439825e-12
+  },
+  "disconnected_counterexample": {
+    "total_energy_change": 0.0,
+    "component_energy_changes": [
+      1.0,
+      -1.0
+    ],
+    "unrepresentable_balance_norm": 0.7071067811865475
+  }
+}

@@ -1,0 +1,4 @@
+#define main adversarial_main
+#include "study.cpp"
+#undef main
+int main(){auto c=make_case("rod_release");auto q=scale_for(c);std::cout<<"initial,h,radial_old,radial_new,velocity_jump,step_doubling_error,tolerance,solver_residual\n";for(std::string label:{"tangent","after_dg_0.01","injected_radial_0.01"}){State s=c.initial;if(label=="after_dg_0.01")s=raw_step(c.model,s,.01,q,"dg64").s;if(label=="injected_radial_0.01")s.v+=.01*s.x;for(int i=0;i<18;++i){double h=(1./30)/std::pow(2.,i);auto a=raw_step(c.model,s,h,q,"dg64"),b=raw_step(c.model,s,h/2,q,"dg64"),d=raw_step(c.model,b.s,h/2,q,"dg64");std::cout<<std::setprecision(16)<<label<<","<<h<<","<<s.x.dot(s.v)<<","<<a.s.x.dot(a.s.v)<<","<<(a.s.v-s.v).norm()<<","<<(a.s.x-d.s.x).norm()/q.l+(a.s.v-d.s.v).norm()/q.v<<","<<h*1e-4<<","<<std::max({a.residual,b.residual,d.residual})<<"\n";}}return 0;}

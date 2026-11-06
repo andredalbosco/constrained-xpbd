@@ -1,0 +1,35 @@
+{
+  "source": "Recorded modal_transfer CSVs; no new simulation",
+  "angle_magnification": 16,
+  "playback_speed": 1,
+  "shared_fixed_viewport": true,
+  "representative_simulation_times": [
+    0.03333333333333333,
+    20,
+    40,
+    60
+  ],
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "duration": "60.000000",
+        "nb_read_frames": "1800"
+      }
+    ]
+  },
+  "full_decode": "pass",
+  "inputs_sha256": {
+    "reference": "f9f0938112db17a33c715b4f33304b918ddd9dd0470527e9c6ca8976979b2a6e",
+    "obj_midpotential_b1": "28df9b4061715e8c35d4a1434a9c9d231afd9e4f92d3c2082d3605a75a69e7af",
+    "obj_quarter_b1": "a0005e63915e48f1ae69ef0301e75449ffafe154c5c757ea8f4538fbfb49ab6a",
+    "canonical_dg": "e9db4124aaaa30816d92c353610b637203010df23c00b995d7c37a702662090a"
+  },
+  "video_sha256": "d6cd9c688d9fcfeec08e75132c329f9757a28c4968c39cdf45c5dfa16fa9b43c"
+}

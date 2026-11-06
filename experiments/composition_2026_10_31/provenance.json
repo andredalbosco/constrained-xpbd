@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-31T01:23:26.714413+00:00",
+  "run_directory": "/home/blacknoir/Global/constrained-xpbd-composition-2026-10-31",
+  "platform": "Linux-6.17.0-41-generic-x86_64-with-glibc2.42",
+  "trajectory_seed": "deterministic; no random sampling",
+  "audit_seed": 42,
+  "compiler": "Clang 20.1.8, Release -O3 -DNDEBUG, Eigen from constrained-xpbd",
+  "parallel_threads": 8,
+  "serial_cost_threads": 1,
+  "validation": "3/3 CTest tests passed",
+  "source_sha256": {
+    "CMakeLists.txt": "6c16b5152a41dc57f80c3ab5e24b9361d9d540090a2fd82125de1f7c34e0cbde",
+    "README.md": "d3094b6c4240b88229a7bfda36eee701d36f906550a3801724c6575bbc21ebdc",
+    "RESULTS.md": "10e6b1c4cfa90dfef9a8e0f466a3e83db61b21b0a65ff6c542e81885c13eae41",
+    "analyze.py": "baa6ef969072c455e5d46202f2cfaf6f9e58c8a407deb1f1c26909de0d435750",
+    "audits.cpp": "f4e2fc63d026600a42274a66f88281558a86a83d84202de389084065d2c8e3c0",
+    "audits_notes.md": "412f157bd16fc504c48abafb4e5c12dfe70723deaad346ba478e63eea963a69f",
+    "build_viewer.py": "a6c0011a1ec47456de62e79e1e4b67125bc9db4817d53b89b81cede7ad6d0720",
+    "common.hpp": "538b255790d445946202539c93c575aa556bb391eba52343ebacb99c59a946a0",
+    "design.py": "78cfe360a9724c60c036777003bf854d64664921828094ab4cc1f84a54023bac",
+    "el.hpp": "9ff552d39e2f01e3eaaa757df1e7aa25ef2c691ba297c6f689f35a07b22c800d",
+    "independent.hpp": "6804d2b360bab319aed5334245df43333539399f62dca285ed8f80f84178e8d2",
+    "independent_validation.cpp": "f13e80d87c367c60d0b2304b1237496236e345251abaad307d96d0834225c83c",
+    "landscape.cpp": "68be74627db704449e130613ef6782511bd5335ce1485ca7998864cc455cf532",
+    "mechanics.hpp": "d3d22a33c05c1dd95fb6b9d2f586759b14f28c98de6bc3c8268bad2a1b9f1489",
+    "mechanics_validation.cpp": "b896f5db28d39d859944ea9427a6cac52bcf1d17ef0fa8bf14696f439289bdfd",
+    "paper_ideas.md": "ee49e5b1af6ba985f9115a0e41b1a47255ac08d70c01e00a6b2e4df26f6d29b0",
+    "run_suite.py": "adde83bc5084b06d30c3285b3107f424dbd9f4d30b9ae51a0f5aaa33979c568d",
+    "study.cpp": "1bc65a96bcbd4bb1b2674e7f43d063cec3be630315f9f7ce2348b320319e75ac"
+  },
+  "counts": {
+    "observed": 20877,
+    "complete": 20804,
+    "incomplete": 73,
+    "pending": 0
+  }
+}

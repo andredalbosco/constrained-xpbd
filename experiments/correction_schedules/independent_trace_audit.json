@@ -1,0 +1,80 @@
+{
+  "coupled_motion/baseline": {
+    "initial_L": 1.2150000000000003,
+    "final_L": -0.14729215834820628,
+    "final_torque_balance": 0.01739466978778803,
+    "counterfactual_material_balance_sum": 0.017394669788269593,
+    "energy_extra_balance_sum": 0.0,
+    "max_per_step_decomposition_error": 6.996318671972923e-14,
+    "final_angle_difference": -0.016944120960264986,
+    "last_second_mean_radial_kinetic": 0.26890978305188906,
+    "last_second_mean_tangential_kinetic": 1.1129110754888136,
+    "last_second_mean_elastic": 0.9871892031087065,
+    "fractional_bound_failures": 0
+  },
+  "coupled_motion/LE_repair_cap": {
+    "initial_L": 1.2150000000000003,
+    "final_L": -3.966060777095888,
+    "final_torque_balance": -0.239075301532778,
+    "counterfactual_material_balance_sum": 0.006403020472508398,
+    "energy_extra_balance_sum": -0.2454783220065201,
+    "max_per_step_decomposition_error": 8.041126358521167e-14,
+    "final_angle_difference": 0.49050578572446524,
+    "last_second_mean_radial_kinetic": 0.3062919185543383,
+    "last_second_mean_tangential_kinetic": 2.4660723651219962,
+    "last_second_mean_elastic": 0.7147207147735719,
+    "fractional_bound_failures": 0
+  },
+  "coupled_motion/joint_repair_cap": {
+    "initial_L": 1.2150000000000003,
+    "final_L": -3.9661400022933795,
+    "final_torque_balance": -0.2391228564930037,
+    "counterfactual_material_balance_sum": 0.006398957717107702,
+    "energy_extra_balance_sum": -0.2455218142122761,
+    "max_per_step_decomposition_error": 6.899830099632576e-14,
+    "final_angle_difference": 0.49065803894958604,
+    "last_second_mean_radial_kinetic": 0.3061462711771952,
+    "last_second_mean_tangential_kinetic": 2.4660500618672097,
+    "last_second_mean_elastic": 0.7146024082210533,
+    "fractional_bound_failures": 0
+  },
+  "spring_orbit/baseline": {
+    "initial_L": 0.8800000000000001,
+    "final_L": 0.8692308117767122,
+    "final_torque_balance": -0.010769188223287873,
+    "counterfactual_material_balance_sum": -0.010769188222855613,
+    "energy_extra_balance_sum": 0.0,
+    "max_per_step_decomposition_error": 5.301553805876248e-14,
+    "final_angle_difference": -0.10198440737807246,
+    "last_second_mean_radial_kinetic": 0.029407902837837143,
+    "last_second_mean_tangential_kinetic": 0.37286437360850044,
+    "last_second_mean_elastic": 0.03574810790161595,
+    "fractional_bound_failures": 0
+  },
+  "spring_orbit/LE_repair_cap": {
+    "initial_L": 0.8800000000000001,
+    "final_L": 1.231758516515192,
+    "final_torque_balance": 0.35175851651519197,
+    "counterfactual_material_balance_sum": -0.024101637281772555,
+    "energy_extra_balance_sum": 0.3758601537963708,
+    "max_per_step_decomposition_error": 3.7626260614154194e-14,
+    "final_angle_difference": 2.071421869382146,
+    "last_second_mean_radial_kinetic": 0.04087780745958462,
+    "last_second_mean_tangential_kinetic": 0.7231001766362676,
+    "last_second_mean_elastic": 0.05599905680312705,
+    "fractional_bound_failures": 0
+  },
+  "spring_orbit/joint_repair_cap": {
+    "initial_L": 0.8800000000000001,
+    "final_L": 1.2317659309588658,
+    "final_torque_balance": 0.35176593095886566,
+    "counterfactual_material_balance_sum": -0.0241025538116501,
+    "energy_extra_balance_sum": 0.3758684847705077,
+    "max_per_step_decomposition_error": 4.349407119186299e-14,
+    "final_angle_difference": 2.071516428682468,
+    "last_second_mean_radial_kinetic": 0.04087315280069335,
+    "last_second_mean_tangential_kinetic": 0.7231094582293314,
+    "last_second_mean_elastic": 0.05599443172794021,
+    "fractional_bound_failures": 0
+  }
+}

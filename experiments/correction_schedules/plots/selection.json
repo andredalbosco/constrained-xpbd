@@ -1,0 +1,603 @@
+{
+  "conditions_per_method": 27,
+  "rule": "For descriptive ranking only: require every condition to finish and worst max energy error/Escale <= 5%; then sort by worst position RMS/reference excursion. This is not a claim of physical correctness.",
+  "energy_qualified_ranking": [
+    {
+      "method": "LE_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7325162201586866,
+      "worst_normalized_position_rms_percent": 83.13945402886034,
+      "minimum_path_ratio": 0.9655671924355983
+    },
+    {
+      "method": "ELE_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7324681483399865,
+      "worst_normalized_position_rms_percent": 83.14319843412723,
+      "minimum_path_ratio": 0.965549290581443
+    },
+    {
+      "method": "joint_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7325135211924447,
+      "worst_normalized_position_rms_percent": 83.14644503948256,
+      "minimum_path_ratio": 0.9655578125883929
+    },
+    {
+      "method": "guarded_joint_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7325135211924447,
+      "worst_normalized_position_rms_percent": 83.14644503948256,
+      "minimum_path_ratio": 0.9655578125883929
+    },
+    {
+      "method": "LEL_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7325135211924447,
+      "worst_normalized_position_rms_percent": 83.14644503948999,
+      "minimum_path_ratio": 0.9655578125883929
+    },
+    {
+      "method": "spectral_p1_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7325135211924447,
+      "worst_normalized_position_rms_percent": 83.14644503948999,
+      "minimum_path_ratio": 0.9655578125883929
+    },
+    {
+      "method": "LE_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503612944231923,
+      "worst_normalized_position_rms_percent": 83.22129446899483,
+      "minimum_path_ratio": 0.9658713623633275
+    },
+    {
+      "method": "ELE_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503003015229335,
+      "worst_normalized_position_rms_percent": 83.22180385105013,
+      "minimum_path_ratio": 0.9658467471596482
+    },
+    {
+      "method": "LEL_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503552555369637,
+      "worst_normalized_position_rms_percent": 83.22824118626691,
+      "minimum_path_ratio": 0.9658604797099017
+    },
+    {
+      "method": "spectral_p1_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503558003184966,
+      "worst_normalized_position_rms_percent": 83.22825878216479,
+      "minimum_path_ratio": 0.9658609593051638
+    },
+    {
+      "method": "joint_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503558003184966,
+      "worst_normalized_position_rms_percent": 83.2282587821701,
+      "minimum_path_ratio": 0.9658609593051599
+    },
+    {
+      "method": "guarded_joint_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503558003184966,
+      "worst_normalized_position_rms_percent": 83.2282587821701,
+      "minimum_path_ratio": 0.9658609593051599
+    },
+    {
+      "method": "alternating_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 1.1169475558713051,
+      "worst_normalized_position_rms_percent": 83.30362950256901,
+      "minimum_path_ratio": 0.9650977120378411
+    },
+    {
+      "method": "spectral_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 3.6477887284702217,
+      "worst_normalized_position_rms_percent": 84.08641103762633,
+      "minimum_path_ratio": 0.961101055803547
+    },
+    {
+      "method": "spectral_unbounded_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 3.6477887284702217,
+      "worst_normalized_position_rms_percent": 84.08641103762633,
+      "minimum_path_ratio": 0.961101055803547
+    },
+    {
+      "method": "spectral_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 3.6478303114531454,
+      "worst_normalized_position_rms_percent": 85.5344748065948,
+      "minimum_path_ratio": 0.9654780824940968
+    },
+    {
+      "method": "spectral_unbounded_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 3.6478303114531454,
+      "worst_normalized_position_rms_percent": 85.5344748065948,
+      "minimum_path_ratio": 0.9654780824940968
+    }
+  ],
+  "all_methods": [
+    {
+      "method": "baseline",
+      "complete_all": true,
+      "worst_energy_error_percent": 98.44400340618574,
+      "worst_normalized_position_rms_percent": 36.08365293560589,
+      "minimum_path_ratio": 0.4195900335820474
+    },
+    {
+      "method": "jacobi_raw",
+      "complete_all": true,
+      "worst_energy_error_percent": 1970514586.4393454,
+      "worst_normalized_position_rms_percent": 1180.5255552761125,
+      "minimum_path_ratio": 0.07236922177538939
+    },
+    {
+      "method": "jacobi_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 27199923.60951418,
+      "worst_normalized_position_rms_percent": 511.73574819855895,
+      "minimum_path_ratio": 0.9052026475606659
+    },
+    {
+      "method": "jacobi_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 7.2778152089194075,
+      "worst_normalized_position_rms_percent": 87.35518937656762,
+      "minimum_path_ratio": 0.9570237264969198
+    },
+    {
+      "method": "jacobi_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 32.083685621569536,
+      "worst_normalized_position_rms_percent": 90.14156274726936,
+      "minimum_path_ratio": 0.9069670205133283
+    },
+    {
+      "method": "jacobi_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 59617747.61698587,
+      "worst_normalized_position_rms_percent": 762.5395540622483,
+      "minimum_path_ratio": 0.004034833967706412
+    },
+    {
+      "method": "jacobi_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 6.181843638317458,
+      "worst_normalized_position_rms_percent": 84.77309511863854,
+      "minimum_path_ratio": 0.9615191777995704
+    },
+    {
+      "method": "EL_raw",
+      "complete_all": true,
+      "worst_energy_error_percent": 2073225.0572667907,
+      "worst_normalized_position_rms_percent": 96.78751479424668,
+      "minimum_path_ratio": 0.0672470671323142
+    },
+    {
+      "method": "EL_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 19351024164.598583,
+      "worst_normalized_position_rms_percent": 1660.036200349574,
+      "minimum_path_ratio": 0.9052065791673496
+    },
+    {
+      "method": "EL_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 7.2780690540151065,
+      "worst_normalized_position_rms_percent": 87.35659882830554,
+      "minimum_path_ratio": 0.957013236527125
+    },
+    {
+      "method": "EL_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 32.08349346000486,
+      "worst_normalized_position_rms_percent": 90.14253155821403,
+      "minimum_path_ratio": 0.9069674442137571
+    },
+    {
+      "method": "EL_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 40257742.55200758,
+      "worst_normalized_position_rms_percent": 293.4727939273522,
+      "minimum_path_ratio": 0.004035464524155182
+    },
+    {
+      "method": "EL_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 6.1817429063047715,
+      "worst_normalized_position_rms_percent": 84.7770830050571,
+      "minimum_path_ratio": 0.9615223574238418
+    },
+    {
+      "method": "LE_raw",
+      "complete_all": true,
+      "worst_energy_error_percent": 2148.819605894047,
+      "worst_normalized_position_rms_percent": 100.01394337612813,
+      "minimum_path_ratio": 0.0
+    },
+    {
+      "method": "LE_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 2073375.054557596,
+      "worst_normalized_position_rms_percent": 85.40572477488013,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "LE_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503612944231923,
+      "worst_normalized_position_rms_percent": 83.22129446899483,
+      "minimum_path_ratio": 0.9658713623633275
+    },
+    {
+      "method": "LE_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 31.713662818070578,
+      "worst_normalized_position_rms_percent": 87.26874405328073,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "LE_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 7.970839278316189,
+      "worst_normalized_position_rms_percent": 99.99276991971239,
+      "minimum_path_ratio": 1.6986230227490475e-06
+    },
+    {
+      "method": "LE_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7325162201586866,
+      "worst_normalized_position_rms_percent": 83.13945402886034,
+      "minimum_path_ratio": 0.9655671924355983
+    },
+    {
+      "method": "joint_raw",
+      "complete_all": true,
+      "worst_energy_error_percent": 8178259.116433523,
+      "worst_normalized_position_rms_percent": 104.48976260766837,
+      "minimum_path_ratio": 0.0
+    },
+    {
+      "method": "joint_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 626913752.4116185,
+      "worst_normalized_position_rms_percent": 1256.6054219043756,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "joint_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503558003184966,
+      "worst_normalized_position_rms_percent": 83.2282587821701,
+      "minimum_path_ratio": 0.9658609593051599
+    },
+    {
+      "method": "joint_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 31.713662818070578,
+      "worst_normalized_position_rms_percent": 87.26874405328073,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "joint_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 2410.723635858353,
+      "worst_normalized_position_rms_percent": 99.99276991971239,
+      "minimum_path_ratio": 1.6986230227490475e-06
+    },
+    {
+      "method": "joint_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7325135211924447,
+      "worst_normalized_position_rms_percent": 83.14644503948256,
+      "minimum_path_ratio": 0.9655578125883929
+    },
+    {
+      "method": "guarded_joint_raw",
+      "complete_all": true,
+      "worst_energy_error_percent": 8178259.116433523,
+      "worst_normalized_position_rms_percent": 104.48976260766837,
+      "minimum_path_ratio": 0.0
+    },
+    {
+      "method": "guarded_joint_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 626913752.4116185,
+      "worst_normalized_position_rms_percent": 1256.6054219043756,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "guarded_joint_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503558003184966,
+      "worst_normalized_position_rms_percent": 83.2282587821701,
+      "minimum_path_ratio": 0.9658609593051599
+    },
+    {
+      "method": "guarded_joint_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 31.713662818070578,
+      "worst_normalized_position_rms_percent": 87.26874405328073,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "guarded_joint_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 2410.723635858353,
+      "worst_normalized_position_rms_percent": 99.99276991971239,
+      "minimum_path_ratio": 1.6986230227490475e-06
+    },
+    {
+      "method": "guarded_joint_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7325135211924447,
+      "worst_normalized_position_rms_percent": 83.14644503948256,
+      "minimum_path_ratio": 0.9655578125883929
+    },
+    {
+      "method": "alternating_raw",
+      "complete_all": false,
+      "worst_energy_error_percent": 15109906376765.668,
+      "worst_normalized_position_rms_percent": 680094.3791599094,
+      "minimum_path_ratio": 0.9655744025638928
+    },
+    {
+      "method": "alternating_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 407024620.8552459,
+      "worst_normalized_position_rms_percent": 1116.8268945897357,
+      "minimum_path_ratio": 0.9056091410809504
+    },
+    {
+      "method": "alternating_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 7.481469830132419,
+      "worst_normalized_position_rms_percent": 85.53356980757505,
+      "minimum_path_ratio": 0.9655834429584251
+    },
+    {
+      "method": "alternating_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 31.992414430240707,
+      "worst_normalized_position_rms_percent": 89.98984513376843,
+      "minimum_path_ratio": 0.907567113705215
+    },
+    {
+      "method": "alternating_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 7150603.553348446,
+      "worst_normalized_position_rms_percent": 724.7017199995753,
+      "minimum_path_ratio": 0.004035464524155182
+    },
+    {
+      "method": "alternating_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 1.1169475558713051,
+      "worst_normalized_position_rms_percent": 83.30362950256901,
+      "minimum_path_ratio": 0.9650977120378411
+    },
+    {
+      "method": "LEL_raw",
+      "complete_all": true,
+      "worst_energy_error_percent": 100367.30094472725,
+      "worst_normalized_position_rms_percent": 100.01364422583379,
+      "minimum_path_ratio": 1.8434237945038096e-10
+    },
+    {
+      "method": "LEL_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 8054907.861139426,
+      "worst_normalized_position_rms_percent": 569.4797799426077,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "LEL_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503552555369637,
+      "worst_normalized_position_rms_percent": 83.22824118626691,
+      "minimum_path_ratio": 0.9658604797099017
+    },
+    {
+      "method": "LEL_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 31.713662818070578,
+      "worst_normalized_position_rms_percent": 87.26864567105785,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "LEL_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 2410.723635858353,
+      "worst_normalized_position_rms_percent": 99.99276991971239,
+      "minimum_path_ratio": 1.6986230227490475e-06
+    },
+    {
+      "method": "LEL_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7325135211924447,
+      "worst_normalized_position_rms_percent": 83.14644503948999,
+      "minimum_path_ratio": 0.9655578125883929
+    },
+    {
+      "method": "ELE_raw",
+      "complete_all": true,
+      "worst_energy_error_percent": 1355574.6268980317,
+      "worst_normalized_position_rms_percent": 100.01394337612813,
+      "minimum_path_ratio": 0.0
+    },
+    {
+      "method": "ELE_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 2073375.054557596,
+      "worst_normalized_position_rms_percent": 238.2727362537022,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "ELE_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503003015229335,
+      "worst_normalized_position_rms_percent": 83.22180385105013,
+      "minimum_path_ratio": 0.9658467471596482
+    },
+    {
+      "method": "ELE_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 31.713662818070578,
+      "worst_normalized_position_rms_percent": 87.26874405328073,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "ELE_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 4954099.071217685,
+      "worst_normalized_position_rms_percent": 99.99276991971239,
+      "minimum_path_ratio": 1.6986230227490475e-06
+    },
+    {
+      "method": "ELE_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7324681483399865,
+      "worst_normalized_position_rms_percent": 83.14319843412723,
+      "minimum_path_ratio": 0.965549290581443
+    },
+    {
+      "method": "spectral_raw",
+      "complete_all": true,
+      "worst_energy_error_percent": 2727.3811299024705,
+      "worst_normalized_position_rms_percent": 99.99902508523947,
+      "minimum_path_ratio": 1.9467068057241403e-06
+    },
+    {
+      "method": "spectral_p1_raw",
+      "complete_all": true,
+      "worst_energy_error_percent": 13519331.460471313,
+      "worst_normalized_position_rms_percent": 100.01394337612813,
+      "minimum_path_ratio": 0.0
+    },
+    {
+      "method": "spectral_unbounded_raw",
+      "complete_all": true,
+      "worst_energy_error_percent": 2727.3811299024705,
+      "worst_normalized_position_rms_percent": 99.99902508523947,
+      "minimum_path_ratio": 1.9467068057241403e-06
+    },
+    {
+      "method": "spectral_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 1408568528.2489402,
+      "worst_normalized_position_rms_percent": 683.0724100557918,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "spectral_p1_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 1058823190.2986954,
+      "worst_normalized_position_rms_percent": 1457.547073659641,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "spectral_unbounded_direction",
+      "complete_all": true,
+      "worst_energy_error_percent": 1408568528.2489402,
+      "worst_normalized_position_rms_percent": 683.0724100557918,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "spectral_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 3.6478303114531454,
+      "worst_normalized_position_rms_percent": 85.5344748065948,
+      "minimum_path_ratio": 0.9654780824940968
+    },
+    {
+      "method": "spectral_p1_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7503558003184966,
+      "worst_normalized_position_rms_percent": 83.22825878216479,
+      "minimum_path_ratio": 0.9658609593051638
+    },
+    {
+      "method": "spectral_unbounded_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 3.6478303114531454,
+      "worst_normalized_position_rms_percent": 85.5344748065948,
+      "minimum_path_ratio": 0.9654780824940968
+    },
+    {
+      "method": "spectral_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 31.713662818070578,
+      "worst_normalized_position_rms_percent": 88.61570253599434,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "spectral_p1_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 31.713662818070578,
+      "worst_normalized_position_rms_percent": 87.26874405328178,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "spectral_unbounded_direction_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 31.713662818070578,
+      "worst_normalized_position_rms_percent": 88.61570253599434,
+      "minimum_path_ratio": 0.9098702320780879
+    },
+    {
+      "method": "spectral_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 5.629580031613268,
+      "worst_normalized_position_rms_percent": 99.99276991971239,
+      "minimum_path_ratio": 1.6986230227490475e-06
+    },
+    {
+      "method": "spectral_p1_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 2410.723635858353,
+      "worst_normalized_position_rms_percent": 99.99276991971239,
+      "minimum_path_ratio": 1.6986230227490475e-06
+    },
+    {
+      "method": "spectral_unbounded_repair",
+      "complete_all": true,
+      "worst_energy_error_percent": 6.202705275638842,
+      "worst_normalized_position_rms_percent": 99.99276991971239,
+      "minimum_path_ratio": 1.6986230227490475e-06
+    },
+    {
+      "method": "spectral_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 3.6477887284702217,
+      "worst_normalized_position_rms_percent": 84.08641103762633,
+      "minimum_path_ratio": 0.961101055803547
+    },
+    {
+      "method": "spectral_p1_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 0.7325135211924447,
+      "worst_normalized_position_rms_percent": 83.14644503948999,
+      "minimum_path_ratio": 0.9655578125883929
+    },
+    {
+      "method": "spectral_unbounded_repair_cap",
+      "complete_all": true,
+      "worst_energy_error_percent": 3.6477887284702217,
+      "worst_normalized_position_rms_percent": 84.08641103762633,
+      "minimum_path_ratio": 0.961101055803547
+    }
+  ],
+  "displayed_methods": [
+    "baseline",
+    "EL_raw",
+    "LE_raw",
+    "LE_repair_cap",
+    "spectral_repair_cap"
+  ]
+}

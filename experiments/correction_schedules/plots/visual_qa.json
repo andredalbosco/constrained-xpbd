@@ -1,0 +1,50 @@
+{
+  "visual_review": "All nine PNGs inspected after final layout corrections. Legends, units, labels, and full failure ranges checked. A duplicated reference legend on the convergence plot was removed. Full-suite footer collision corrected.",
+  "figures": [
+    {
+      "file": "core_energy_and_motion_480hz.png",
+      "sha256": "99efe44f44df5144053680c2a8ecaa7fb20b797b171bdd277be2693b6245b117"
+    },
+    {
+      "file": "schedule_motion_convergence.png",
+      "sha256": "b629a957ba0807b5340edde140361f3ed4470b8a29c966cc498e9af94c001b41"
+    },
+    {
+      "file": "schedule_policy_energy_480hz.png",
+      "sha256": "fde49b51bec74aec24739098c2bef8230a6cff23782f52dba62a0954ff0f4f13"
+    },
+    {
+      "file": "schedule_policy_position_480hz.png",
+      "sha256": "f48f5e952cb71d5a7ca7150d80c1bb8661c0ddbf45181f5341f690972ac693e9"
+    },
+    {
+      "file": "schedule_policy_worst_cases.png",
+      "sha256": "63a09e316a15c9a2c2362a54afe8395f73540f58b3aa46a2e9c30ec28917ce85"
+    },
+    {
+      "file": "schedules_energy_motion_elastic_480hz.png",
+      "sha256": "bd7dcd698a2007528442049a3e15c77b38b8659ed4c62dc55312729312e68b5d"
+    },
+    {
+      "file": "schedules_energy_motion_spring_and_rod_480hz.png",
+      "sha256": "9926b09456b52b8c728ccb6ab8e880f3fc3ad27cebdf12acf409db91f4498ebb"
+    },
+    {
+      "file": "spring_orbit_energy_partition_and_momentum.png",
+      "sha256": "e43243e1da75447fb3900098ebeb10952f8722763b92fff18beab0375df7f3fe"
+    },
+    {
+      "file": "spring_release_prediction_and_cancellation.png",
+      "sha256": "1c7b7e01fdc26b44e518a1390f195441439dd00f0ee6c7689b7dac7b7e394aa7"
+    }
+  ],
+  "source_script_sha256": "3708a7d6e07d01a27885d7b2cb8a8e5606d5154a0f96957b878105f2de88310e",
+  "preferred_final_embeds": [
+    "core_energy_and_motion_480hz.png",
+    "spring_orbit_energy_partition_and_momentum.png",
+    "schedule_policy_worst_cases.png"
+  ],
+  "scope": "Only one-body spring/elastic/rigid pendulum results; no chain or large-system simulation.",
+  "coverage": "1,809 summary runs, 67 methods, 9 cases, 3 substep counts. 90 full selected trace groups independently audited.",
+  "frozen_source": true
+}

@@ -1,0 +1,92 @@
+{
+  "one_step_rows": 4158,
+  "one_step_by_method": {
+    "refreshed_drop": {
+      "rows": 1386,
+      "failures": 0,
+      "final_rows": 198,
+      "full_kkt_below_1e-6": 60,
+      "median_final_full_residual": 0.00039431148133983816,
+      "median_final_stationarity": 0.00039431148133983816,
+      "median_final_energy": 1.276805942099225e-15
+    },
+    "refreshed_local_rx": {
+      "rows": 1386,
+      "failures": 21,
+      "final_rows": 198,
+      "full_kkt_below_1e-6": 174,
+      "median_final_full_residual": 3.3655993827549143e-15,
+      "median_final_stationarity": 1.8903770588179723e-16,
+      "median_final_energy": 1.3059440725931242e-15
+    },
+    "frozen_full_rx": {
+      "rows": 1386,
+      "failures": 0,
+      "final_rows": 198,
+      "full_kkt_below_1e-6": 168,
+      "median_final_full_residual": 1.1187439863391546e-12,
+      "median_final_stationarity": 3.1815666281143527e-16,
+      "median_final_energy": 2.274799900246309e-12
+    }
+  },
+  "short": {
+    "refreshed_drop": {
+      "rows": 264,
+      "complete": 264,
+      "median_max_energy_complete": 0.0013642411442106334,
+      "median_rms_position_complete": 0.0062382834876452305,
+      "worst_reference_gap": 1.225755356205578e-08
+    },
+    "refreshed_local_rx": {
+      "rows": 264,
+      "complete": 263,
+      "median_max_energy_complete": 0.0009306225490576868,
+      "median_rms_position_complete": 0.005906507703444282,
+      "worst_reference_gap": 1.225755356205578e-08
+    },
+    "frozen_full_rx": {
+      "rows": 264,
+      "complete": 264,
+      "median_max_energy_complete": 0.006936820543353055,
+      "median_rms_position_complete": 0.005973212713872748,
+      "worst_reference_gap": 1.225755356205578e-08
+    },
+    "dense_oracle": {
+      "rows": 22,
+      "complete": 22,
+      "median_max_energy_complete": 1.2618806105879653e-11,
+      "median_rms_position_complete": 0.004573811221802492,
+      "worst_reference_gap": 1.225755356205578e-08
+    }
+  },
+  "long": {
+    "refreshed_drop": {
+      "rows": 72,
+      "complete": 72,
+      "median_max_energy_complete": 0.00020070210498652428,
+      "median_rms_position_complete": 0.02724520079858097,
+      "worst_reference_gap": 1.0066273291394856e-07
+    },
+    "refreshed_local_rx": {
+      "rows": 72,
+      "complete": 71,
+      "median_max_energy_complete": 0.00019306606894120104,
+      "median_rms_position_complete": 0.021577884646744025,
+      "worst_reference_gap": 1.0066273291394856e-07
+    },
+    "frozen_full_rx": {
+      "rows": 72,
+      "complete": 72,
+      "median_max_energy_complete": 0.0020831574004305234,
+      "median_rms_position_complete": 0.025055317580294965,
+      "worst_reference_gap": 1.0066273291394856e-07
+    },
+    "dense_oracle": {
+      "rows": 12,
+      "complete": 12,
+      "median_max_energy_complete": 3.5958523545632635e-10,
+      "median_rms_position_complete": 0.022132733862568928,
+      "worst_reference_gap": 1.0066273291394856e-07
+    }
+  }
+}

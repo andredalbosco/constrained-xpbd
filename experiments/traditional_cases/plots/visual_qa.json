@@ -1,0 +1,45 @@
+{
+  "figures": [
+    {
+      "file": "all_methods_energy_motion_240hz.png",
+      "sha256": "7eb8ae54fa45604209ba4e25eb11210215bb3bedbe31b177fe69c37ce72b0d1d"
+    },
+    {
+      "file": "all_methods_energy_motion_480hz.png",
+      "sha256": "6b51ebf409d8d766fbef4c358515aa8d842dcbbaa502fe544968bcac362216f5"
+    },
+    {
+      "file": "all_methods_energy_motion_960hz.png",
+      "sha256": "002cda6723f71e647e412a2bb61c1f145d5ca9527c65801f1338889d66fe7a60"
+    },
+    {
+      "file": "double_small_energy_positions_480hz.png",
+      "sha256": "f42a68fbdf3c71787835956ea589b15e1d8f36f75a37fca3e66f879909c5148b"
+    },
+    {
+      "file": "holdout_energy_positions_480hz.png",
+      "sha256": "c101293f154b013fef44972abeffc87a9c9bb63c13839f4658bd55e4ae41ef17"
+    },
+    {
+      "file": "overview.png",
+      "sha256": "9f71b35da5fd5032ff22ec8bd03794eeb6df87e13c35a2cd732b37b4d872713c"
+    },
+    {
+      "file": "pendulum_rest_energy_positions_480hz.png",
+      "sha256": "4118123695f4500c54c5be963647bae0781ce908114a98a6cb9a1897195724e3"
+    },
+    {
+      "file": "position_convergence.png",
+      "sha256": "07a5b18a2baeddd31276f5fa97c899c38873ceb7d1e3354ef6c307262937e116"
+    },
+    {
+      "file": "spring_release_energy_positions_480hz.png",
+      "sha256": "6126e2c62efe969686ad817417a0c24425e3eca2db1e21bf77d8c3a35e38c536"
+    }
+  ],
+  "source_sha256": "d57c1f70d90736f3859658ac5728892d4d02081e40527217f5e6e0403d152ee3",
+  "visual_review": "All nine layouts inspected. Final overview and scorecard inspected again after replacing misleading whole-pair terminology for the two-mass case. Labels, units, both masses, logarithmic axes, raw-gate failure ranges, and STOP cells verified.",
+  "primary_embed": "overview.png",
+  "baseline_audit": "All seven ordinary XPBD position RMS errors decrease over 240, 480, and 960 Hz. Reference refinement and independent energy/RMS/angular audits pass.",
+  "source_final": true
+}

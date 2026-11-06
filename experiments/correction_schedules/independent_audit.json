@@ -1,0 +1,89 @@
+{
+  "root": "/tmp/xpbd-correction-schedules",
+  "summaries": {
+    "sweep": {
+      "rows": 1809,
+      "statuses": {
+        "completed": 1609,
+        "aborted_safety_limit": 2,
+        "completed_with_incompatible_updates": 198
+      },
+      "evaluated_substeps": 10125825,
+      "largest_reported_cap_overshoot": 2.7755575615628914e-17
+    },
+    "selected": {
+      "rows": 270,
+      "statuses": {
+        "completed": 243,
+        "completed_with_incompatible_updates": 27
+      },
+      "evaluated_substeps": 1512000,
+      "largest_reported_cap_overshoot": 2.7755575615628914e-17
+    }
+  },
+  "traces": {
+    "counts": {
+      "trace_updates": 432000,
+      "capped_policy_updates": 259200,
+      "repair_policy_updates": 216000,
+      "accepted_repair_updates": 197844,
+      "accepted_repairs_worsening_actual_residual": 80489
+    },
+    "maxima": {
+      "extra_diagnostic_discrepancy": 3.1401849173675503e-16,
+      "prediction_identity_discrepancy": 3.637978807091713e-12,
+      "actual_baseline_H_discrepancy": 6.039613253960852e-14,
+      "reference_error_vs_analytic_oscillator": 6.135092434078615e-13,
+      "actual_cap_excess": 2.1480077916011253e-16
+    },
+    "actual_repair_worsening_by_case_method": {
+      "vertical_oscillation/EL_repair_cap": 490,
+      "vertical_oscillation/LE_repair_cap": 1006,
+      "vertical_oscillation/joint_repair_cap": 1006,
+      "vertical_oscillation/alternating_repair_cap": 544,
+      "vertical_oscillation/spectral_repair_cap": 522,
+      "small_swing/EL_repair_cap": 1005,
+      "small_swing/LE_repair_cap": 4793,
+      "small_swing/joint_repair_cap": 4793,
+      "small_swing/alternating_repair_cap": 2619,
+      "small_swing/spectral_repair_cap": 2280,
+      "swing_rest/EL_repair_cap": 560,
+      "swing_rest/LE_repair_cap": 1083,
+      "swing_rest/joint_repair_cap": 1083,
+      "swing_rest/alternating_repair_cap": 543,
+      "swing_rest/spectral_repair_cap": 571,
+      "swing_tangent/EL_repair_cap": 1388,
+      "swing_tangent/LE_repair_cap": 2841,
+      "swing_tangent/joint_repair_cap": 2841,
+      "swing_tangent/alternating_repair_cap": 1379,
+      "swing_tangent/spectral_repair_cap": 1422,
+      "coupled_motion/EL_repair_cap": 45,
+      "coupled_motion/LE_repair_cap": 117,
+      "coupled_motion/joint_repair_cap": 117,
+      "coupled_motion/alternating_repair_cap": 57,
+      "coupled_motion/spectral_repair_cap": 59,
+      "spring_release/EL_repair_cap": 34,
+      "spring_release/LE_repair_cap": 32,
+      "spring_release/joint_repair_cap": 32,
+      "spring_release/alternating_repair_cap": 41,
+      "spring_release/spectral_repair_cap": 32,
+      "spring_orbit/EL_repair_cap": 74,
+      "spring_orbit/LE_repair_cap": 168,
+      "spring_orbit/joint_repair_cap": 168,
+      "spring_orbit/alternating_repair_cap": 71,
+      "spring_orbit/spectral_repair_cap": 78,
+      "pendulum_rest/EL_repair_cap": 3736,
+      "pendulum_rest/LE_repair_cap": 4744,
+      "pendulum_rest/joint_repair_cap": 4744,
+      "pendulum_rest/alternating_repair_cap": 4745,
+      "pendulum_rest/spectral_repair_cap": 4744,
+      "pendulum_kick/EL_repair_cap": 4777,
+      "pendulum_kick/LE_repair_cap": 4776,
+      "pendulum_kick/joint_repair_cap": 4776,
+      "pendulum_kick/alternating_repair_cap": 4777,
+      "pendulum_kick/spectral_repair_cap": 4776
+    }
+  },
+  "issues": [],
+  "interpretation": "Repair constrains the frozen linear prediction. Actual nonlinear energy residual may worsen relative to the material-only endpoint even when every filter invariant passes."
+}

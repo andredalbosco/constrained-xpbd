@@ -1,0 +1,145 @@
+jacobian N=2 regime=uniform relative=1.2955967566229e-10
+energy_residual_identity N=2 regime=uniform error=4.2644952578684e-16
+conditioning N=2 regime=uniform metric=none condition=2.0527258138279
+root N=2 regime=uniform metric=none converged=1 difference=0 energy=1.3646384825179e-14 products=12
+conditioning N=2 regime=uniform metric=mass condition=2.0527258138279
+root N=2 regime=uniform metric=mass converged=1 difference=0 energy=1.3646384825179e-14 products=12
+conditioning N=2 regime=uniform metric=diagonal condition=2.2343876367297
+root N=2 regime=uniform metric=diagonal converged=1 difference=0 energy=1.3646384825179e-14 products=12
+conditioning N=2 regime=uniform metric=graph condition=2.0402457191137
+root N=2 regime=uniform metric=graph converged=1 difference=0 energy=1.3646384825179e-14 products=12
+conditioning N=2 regime=uniform metric=svd_rows condition=1.0009745341824
+root N=2 regime=uniform metric=svd_rows converged=1 difference=0 energy=1.3646384825179e-14 products=12
+jacobian N=2 regime=mass100 relative=1.8473319579501e-10
+energy_residual_identity N=2 regime=mass100 error=2.6027174164316e-14
+conditioning N=2 regime=mass100 metric=none condition=76.677265595431
+root N=2 regime=mass100 metric=none converged=1 difference=0 energy=0 products=12
+conditioning N=2 regime=mass100 metric=mass condition=41.445439073781
+root N=2 regime=mass100 metric=mass converged=1 difference=0 energy=0 products=12
+conditioning N=2 regime=mass100 metric=diagonal condition=32.638923415289
+root N=2 regime=mass100 metric=diagonal converged=1 difference=0 energy=0 products=12
+conditioning N=2 regime=mass100 metric=graph condition=25.462313475075
+root N=2 regime=mass100 metric=graph converged=1 difference=0 energy=0 products=12
+conditioning N=2 regime=mass100 metric=svd_rows condition=1.0014958499474
+root N=2 regime=mass100 metric=svd_rows converged=1 difference=0 energy=0 products=12
+jacobian N=2 regime=stiff100 relative=6.7481059669562e-10
+energy_residual_identity N=2 regime=stiff100 error=2.8404699200747e-13
+conditioning N=2 regime=stiff100 metric=none condition=41.503849368691
+root N=2 regime=stiff100 metric=none converged=1 difference=0 energy=1.6040300725127e-13 products=12
+conditioning N=2 regime=stiff100 metric=mass condition=41.503849368691
+root N=2 regime=stiff100 metric=mass converged=1 difference=0 energy=1.6040300725127e-13 products=12
+conditioning N=2 regime=stiff100 metric=diagonal condition=33.482840152871
+root N=2 regime=stiff100 metric=diagonal converged=1 difference=0 energy=1.6040300725127e-13 products=12
+conditioning N=2 regime=stiff100 metric=graph condition=31.819165070961
+root N=2 regime=stiff100 metric=graph converged=1 difference=0 energy=1.6040300725127e-13 products=12
+conditioning N=2 regime=stiff100 metric=svd_rows condition=1.0021097253615
+root N=2 regime=stiff100 metric=svd_rows converged=1 difference=0 energy=1.6040300725127e-13 products=12
+jacobian N=2 regime=both100 relative=6.5754561759935e-10
+energy_residual_identity N=2 regime=both100 error=2.5488895457174e-13
+conditioning N=2 regime=both100 metric=none condition=124.34930118061
+root N=2 regime=both100 metric=none converged=1 difference=0 energy=2.5881032310362e-13 products=40
+conditioning N=2 regime=both100 metric=mass condition=2039.6658485041
+root N=2 regime=both100 metric=mass converged=1 difference=0 energy=2.5881032310362e-13 products=40
+conditioning N=2 regime=both100 metric=diagonal condition=129.39018545561
+root N=2 regime=both100 metric=diagonal converged=1 difference=0 energy=2.5881032310362e-13 products=40
+conditioning N=2 regime=both100 metric=graph condition=124.32783495766
+root N=2 regime=both100 metric=graph converged=1 difference=7.5419749832027e-15 energy=2.1959663778489e-13 products=40
+conditioning N=2 regime=both100 metric=svd_rows condition=1.0017935065695
+root N=2 regime=both100 metric=svd_rows converged=1 difference=7.5419749832027e-15 energy=2.1959663778489e-13 products=40
+jacobian N=8 regime=uniform relative=3.0102560811382e-10
+energy_residual_identity N=8 regime=uniform error=2.3896031757616e-15
+conditioning N=8 regime=uniform metric=none condition=2.5566743858771
+root N=8 regime=uniform metric=none converged=1 difference=0 energy=0 products=36
+conditioning N=8 regime=uniform metric=mass condition=2.5566743858771
+root N=8 regime=uniform metric=mass converged=1 difference=0 energy=0 products=36
+conditioning N=8 regime=uniform metric=diagonal condition=2.5675459428748
+root N=8 regime=uniform metric=diagonal converged=1 difference=0 energy=0 products=39
+conditioning N=8 regime=uniform metric=graph condition=2.4152531930182
+root N=8 regime=uniform metric=graph converged=1 difference=0 energy=0 products=30
+conditioning N=8 regime=uniform metric=svd_rows condition=1.0012029448595
+root N=8 regime=uniform metric=svd_rows converged=1 difference=0 energy=0 products=12
+jacobian N=8 regime=mass100 relative=3.1058228966547e-10
+energy_residual_identity N=8 regime=mass100 error=7.7944962773161e-15
+conditioning N=8 regime=mass100 metric=none condition=114.84550181324
+root N=8 regime=mass100 metric=none converged=1 difference=0 energy=1.6761284794741e-12 products=48
+conditioning N=8 regime=mass100 metric=mass condition=41.921793837194
+root N=8 regime=mass100 metric=mass converged=1 difference=1.4881333105337e-15 energy=1.6761284794741e-12 products=43
+conditioning N=8 regime=mass100 metric=diagonal condition=46.612440289533
+root N=8 regime=mass100 metric=diagonal converged=1 difference=0 energy=1.6761284794741e-12 products=48
+conditioning N=8 regime=mass100 metric=graph condition=31.187781834634
+root N=8 regime=mass100 metric=graph converged=1 difference=0 energy=1.6761284794741e-12 products=35
+conditioning N=8 regime=mass100 metric=svd_rows condition=1.0022142807168
+root N=8 regime=mass100 metric=svd_rows converged=1 difference=1.4155343563971e-15 energy=1.6761284794741e-12 products=17
+jacobian N=8 regime=stiff100 relative=3.8031808180658e-10
+energy_residual_identity N=8 regime=stiff100 error=4.16243559305e-16
+conditioning N=8 regime=stiff100 metric=none condition=164.48359755203
+root N=8 regime=stiff100 metric=none converged=1 difference=2.834809254547e-14 energy=4.8561748585583e-15 products=53
+conditioning N=8 regime=stiff100 metric=mass condition=164.48359755203
+root N=8 regime=stiff100 metric=mass converged=1 difference=2.834809254547e-14 energy=4.8561748585583e-15 products=53
+conditioning N=8 regime=stiff100 metric=diagonal condition=164.50173587007
+root N=8 regime=stiff100 metric=diagonal converged=1 difference=0 energy=1.248730677915e-15 products=60
+conditioning N=8 regime=stiff100 metric=graph condition=163.73846362748
+root N=8 regime=stiff100 metric=graph converged=1 difference=0 energy=1.248730677915e-15 products=45
+conditioning N=8 regime=stiff100 metric=svd_rows condition=1.0077942096453
+root N=8 regime=stiff100 metric=svd_rows converged=1 difference=0 energy=1.248730677915e-15 products=21
+jacobian N=8 regime=both100 relative=3.867413258876e-10
+energy_residual_identity N=8 regime=both100 error=6.9248919173319e-16
+conditioning N=8 regime=both100 metric=none condition=408.39513454633
+root N=8 regime=both100 metric=none converged=1 difference=1.7040772470057e-14 energy=4.1549351503992e-16 products=176
+conditioning N=8 regime=both100 metric=mass condition=2060.2269408005
+root N=8 regime=both100 metric=mass converged=1 difference=0 energy=0 products=159
+conditioning N=8 regime=both100 metric=diagonal condition=399.03025928733
+root N=8 regime=both100 metric=diagonal converged=1 difference=0 energy=0 products=176
+conditioning N=8 regime=both100 metric=graph condition=230.72599392117
+root N=8 regime=both100 metric=graph converged=1 difference=0 energy=0 products=141
+conditioning N=8 regime=both100 metric=svd_rows condition=1.0036102755453
+root N=8 regime=both100 metric=svd_rows converged=1 difference=1.7040772470057e-14 energy=4.1549351503992e-16 products=72
+jacobian N=32 regime=uniform relative=2.5590973598058e-09
+energy_residual_identity N=32 regime=uniform error=6.2855397382929e-15
+conditioning N=32 regime=uniform metric=none condition=2.626095120888
+root N=32 regime=uniform metric=none converged=1 difference=1.1345243488066e-14 energy=1.980428520619e-14 products=57
+conditioning N=32 regime=uniform metric=mass condition=2.626095120888
+root N=32 regime=uniform metric=mass converged=1 difference=1.1345243488066e-14 energy=1.980428520619e-14 products=57
+conditioning N=32 regime=uniform metric=diagonal condition=2.6150857987679
+root N=32 regime=uniform metric=diagonal converged=1 difference=8.673617379884e-19 energy=1.980428520619e-14 products=56
+conditioning N=32 regime=uniform metric=graph condition=2.4196230118297
+root N=32 regime=uniform metric=graph converged=1 difference=1.1345235034649e-14 energy=1.980428520619e-14 products=52
+conditioning N=32 regime=uniform metric=svd_rows condition=1.0015309540346
+root N=32 regime=uniform metric=svd_rows converged=1 difference=1.1275702593849e-16 energy=1.980428520619e-14 products=12
+jacobian N=32 regime=mass100 relative=2.1884336587617e-09
+energy_residual_identity N=32 regime=mass100 error=1.8678423754211e-14
+conditioning N=32 regime=mass100 metric=none condition=85.782578794689
+root N=32 regime=mass100 metric=none converged=1 difference=0 energy=9.5729258880441e-14 products=187
+conditioning N=32 regime=mass100 metric=mass condition=42.399935024403
+root N=32 regime=mass100 metric=mass converged=1 difference=4.8078721430079e-14 energy=9.5729258880441e-14 products=116
+conditioning N=32 regime=mass100 metric=diagonal condition=35.081866809913
+root N=32 regime=mass100 metric=diagonal converged=1 difference=1.1646376515436e-14 energy=9.5729258880441e-14 products=145
+conditioning N=32 regime=mass100 metric=graph condition=22.995599131293
+root N=32 regime=mass100 metric=graph converged=1 difference=0 energy=9.5729258880441e-14 products=99
+conditioning N=32 regime=mass100 metric=svd_rows condition=1.0025113545042
+root N=32 regime=mass100 metric=svd_rows converged=1 difference=0 energy=9.5729258880441e-14 products=17
+jacobian N=32 regime=stiff100 relative=9.096774964319e-09
+energy_residual_identity N=32 regime=stiff100 error=1.8848209785136e-15
+conditioning N=32 regime=stiff100 metric=none condition=163.47678949219
+root N=32 regime=stiff100 metric=none converged=1 difference=9.0947394117369e-14 energy=1.7363199317216e-14 products=152
+conditioning N=32 regime=stiff100 metric=mass condition=163.47678949219
+root N=32 regime=stiff100 metric=mass converged=1 difference=9.0947394117369e-14 energy=1.7363199317216e-14 products=152
+conditioning N=32 regime=stiff100 metric=diagonal condition=163.47741104613
+root N=32 regime=stiff100 metric=diagonal converged=1 difference=9.1474630431192e-14 energy=1.7363199317216e-14 products=161
+conditioning N=32 regime=stiff100 metric=graph condition=162.47041446648
+root N=32 regime=stiff100 metric=graph converged=1 difference=5.6621450486231e-15 energy=1.0966231147715e-14 products=156
+conditioning N=32 regime=stiff100 metric=svd_rows condition=1.0113259992009
+root N=32 regime=stiff100 metric=svd_rows converged=1 difference=0 energy=1.0966231147715e-14 products=31
+jacobian N=32 regime=both100 relative=9.2485680340774e-09
+energy_residual_identity N=32 regime=both100 error=9.6942997815093e-16
+conditioning N=32 regime=both100 metric=none condition=4223.8294866136
+root N=32 regime=both100 metric=none converged=1 difference=2.540410773122e-14 energy=2.46349265036e-14 products=1029
+conditioning N=32 regime=both100 metric=mass condition=2893.2289848371
+root N=32 regime=both100 metric=mass converged=1 difference=1.1324274851177e-14 energy=2.3722521818282e-14 products=718
+conditioning N=32 regime=both100 metric=diagonal condition=4125.0635336355
+root N=32 regime=both100 metric=diagonal converged=1 difference=2.540410773122e-14 energy=2.46349265036e-14 products=1037
+conditioning N=32 regime=both100 metric=graph condition=2325.6734912474
+root N=32 regime=both100 metric=graph converged=1 difference=1.6992404686251e-14 energy=2.3722521818282e-14 products=722
+conditioning N=32 regime=both100 metric=svd_rows condition=1.0076747290405
+root N=32 regime=both100 metric=svd_rows converged=1 difference=1.6992404686251e-14 energy=2.3722521818282e-14 products=149
+PASS derivative and converged-root identity checks

@@ -1,0 +1,95 @@
+{
+  "balanced": {
+    "configurations": 84,
+    "converged": 78,
+    "converged_pairs": 78,
+    "max_position_gap": 2.808863867260598e-09,
+    "max_velocity_gap": 1.045116159619276e-06,
+    "max_full_stationarity": 1.227655204335179e-08
+  },
+  "grounded_first": {
+    "configurations": 84,
+    "converged": 81,
+    "converged_pairs": 81,
+    "max_position_gap": 2.802722523926965e-09,
+    "max_velocity_gap": 1.045116192556585e-06,
+    "max_full_stationarity": 7.936636965129216e-08
+  },
+  "grounded_last": {
+    "configurations": 84,
+    "converged": 81,
+    "converged_pairs": 80,
+    "max_position_gap": 1.172778575796868e-08,
+    "max_velocity_gap": 1.045116278427553e-06,
+    "max_full_stationarity": 8.591942207154012e-08
+  },
+  "trajectories": {
+    "runs": 40,
+    "unconverged_steps": 0,
+    "max_reference_gap": 6.580260937060012e-11
+  },
+  "normalization": {
+    "runs": 42,
+    "unconverged_steps": 0,
+    "max_compensated_motion_change": 0.0
+  },
+  "larger": {
+    "full": {
+      "configurations": 24,
+      "converged": 23
+    },
+    "reduced": {
+      "configurations": 24,
+      "converged": 22
+    }
+  },
+  "nonlinear_controls": {
+    "full_aligned_dual": {
+      "configurations": 16,
+      "converged": 12
+    },
+    "full_zero_dual": {
+      "configurations": 16,
+      "converged": 15
+    },
+    "reduced_GN": {
+      "configurations": 16,
+      "converged": 15
+    },
+    "reduced_GN_scaled": {
+      "configurations": 16,
+      "converged": 15
+    },
+    "reduced_exact": {
+      "configurations": 16,
+      "converged": 14
+    },
+    "reduced_exact_scaled": {
+      "configurations": 16,
+      "converged": 14
+    }
+  },
+  "newton_polish": {
+    "configurations": 16,
+    "converged": 16
+  },
+  "disconnected": {
+    "configurations": 36,
+    "fully_converged": 32,
+    "max_reference_gap": 1.396982055768759e-09
+  },
+  "larger_trajectories": {
+    "full": {
+      "configurations": 8,
+      "complete": 7
+    },
+    "reduced_GN_polish": {
+      "configurations": 8,
+      "complete": 8
+    },
+    "reduced_exact": {
+      "configurations": 8,
+      "complete": 3
+    }
+  }
+}

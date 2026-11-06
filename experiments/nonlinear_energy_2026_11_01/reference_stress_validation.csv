@@ -1,0 +1,54 @@
+case,h,converged,residual,energy_error,nfev,method,unique_root_certified,reason
+spring_tangent,0.02,True,6.938893903907228e-17,-1.0321604682062002e-15,8,hybr,False,verified residual; The solution converged.
+spring_tangent,0.08,True,6.071532165918825e-17,1.1102230246251565e-15,9,hybr,False,verified residual; The solution converged.
+spring_tangent,0.2,True,1.1564823173178715e-16,-4.440892098500626e-16,11,hybr,False,verified residual; The solution converged.
+spring_tangent,0.5,True,3.7007434154171886e-16,-8.881784197001252e-16,16,hybr,False,verified residual; The solution converged.
+spring_tangent,1.0,True,1.7578531223231646e-15,1.7763568394002505e-15,26,hybr,False,verified residual; The solution converged.
+spring_compressed,0.02,True,1.1275702593849246e-17,-5.551115123125783e-16,9,hybr,False,verified residual; The solution converged.
+spring_compressed,0.08,True,0.0,-1.3322676295501878e-15,11,hybr,False,verified residual; The solution converged.
+spring_compressed,0.2,True,5.551115123125783e-17,5.329070518200751e-15,14,hybr,False,verified residual; The solution converged.
+spring_compressed,0.5,True,4.440892098500626e-16,-3.552713678800501e-15,19,hybr,False,verified residual; The solution converged.
+spring_compressed,1.0,True,1.5543122344752192e-15,-3.9968028886505635e-15,40,hybr,False,verified residual; The solution converged.
+spring_stiff,0.02,True,1.026672417739499e-16,1.2423395645555502e-13,10,hybr,False,verified residual; The solution converged.
+spring_stiff,0.08,True,1.2123290132807252e-14,1.170619157164765e-12,56,hybr,False,verified residual; The solution converged.
+spring_stiff,0.2,False,1.0890023427239122,146.35598023088716,144,hybr+least_squares,False,"residual not converged; The iteration is not making good progress, as measured by the 
+ improvement from the last ten iterations.; `ftol` termination condition is satisfied."
+spring_stiff,0.5,True,9.05380652089832e-17,4.75175454539567e-14,24,hybr,False,verified residual; The solution converged.
+spring_stiff,1.0,True,1.7994440460285413e-15,1.8118839761882555e-13,21,hybr,False,verified residual; The solution converged.
+spring_nearrest,0.02,True,9.769962519053452e-17,3.8924201582925416e-23,7,hybr,False,verified residual; The solution converged.
+spring_nearrest,0.08,True,4.2632563676266986e-17,-1.6027279122766245e-23,13,hybr,False,verified residual; The solution converged.
+spring_nearrest,0.2,True,1.3322676029926221e-16,3.8064789297076415e-23,18,hybr,False,verified residual; The solution converged.
+spring_nearrest,0.5,True,5.551115067614633e-16,6.344131556086577e-23,20,hybr,False,"verified residual; The iteration is not making good progress, as measured by the 
+ improvement from the last ten iterations."
+spring_nearrest,1.0,True,2.10942372569356e-15,7.670631795740353e-23,24,hybr,False,"verified residual; The iteration is not making good progress, as measured by the 
+ improvement from the last ten iterations."
+rod_bottom,0.02,True,0.0,0.0,4,brentq,True,verified residual; converged
+rod_bottom,0.08,True,0.0,0.0,4,brentq,True,verified residual; converged
+rod_bottom,0.2,True,0.0,0.0,4,brentq,True,verified residual; converged
+rod_bottom,0.5,True,0.0,0.0,4,brentq,True,verified residual; converged
+rod_bottom,1.0,True,0.0,0.0,4,brentq,False,verified residual; converged; finite-step angular branch uniqueness not certified
+rod_top,0.02,True,1.9340516700149106e-19,9.4039548065783e-34,5,brentq,True,verified residual; converged
+rod_top,0.08,True,3.844411231883371e-18,0.0,5,brentq,True,verified residual; converged
+rod_top,0.2,True,3.1483581031986756e-17,1.5407439555097887e-31,5,brentq,True,verified residual; converged
+rod_top,0.5,True,5.861145050323108e-17,3.944304526105059e-31,5,brentq,True,verified residual; converged
+rod_top,1.0,True,1.810761304179664e-16,0.0,14,brentq,False,verified residual; converged; finite-step angular branch uniqueness not certified
+rod_release,0.02,True,7.39425881635114e-17,-8.760353553682876e-16,6,brentq,True,verified residual; converged
+rod_release,0.08,True,0.0,-1.942890293094024e-16,6,brentq,True,verified residual; converged
+rod_release,0.2,True,1.3877787807814457e-17,3.3306690738754696e-16,8,brentq,True,verified residual; converged
+rod_release,0.5,True,0.0,-6.661338147750939e-16,8,brentq,True,verified residual; converged
+rod_release,1.0,True,2.2860861465268256e-15,-2.1094237467877974e-14,10,brentq,False,verified residual; converged; finite-step angular branch uniqueness not certified
+rod_nearrest,0.02,True,1.227142462309354e-17,1.920948842072847e-18,5,brentq,True,verified residual; converged
+rod_nearrest,0.08,True,6.492478589382773e-20,2.985111166369942e-17,6,brentq,True,verified residual; converged
+rod_nearrest,0.2,True,3.4370488499654498e-15,1.5961942754593692e-16,6,brentq,True,verified residual; converged
+rod_nearrest,0.5,True,1.349122303858149e-24,4.62287322746125e-16,7,brentq,True,verified residual; converged
+rod_nearrest,1.0,True,6.745611519290745e-25,4.036831709541041e-16,7,brentq,False,verified residual; converged; finite-step angular branch uniqueness not certified
+rod_near_separatrix,0.02,True,9.486769009248164e-20,8.12501108060637e-16,6,brentq,True,verified residual; converged
+rod_near_separatrix,0.08,True,3.686287386450715e-18,4.139483894549656e-16,7,brentq,True,verified residual; converged
+rod_near_separatrix,0.2,True,6.093216209368535e-17,8.187894806610529e-16,7,brentq,True,verified residual; converged
+rod_near_separatrix,0.5,True,1.3807054944369938e-15,2.42861286636753e-15,9,brentq,True,verified residual; converged
+rod_near_separatrix,1.0,True,0.0,3.552713678800501e-15,13,brentq,False,verified residual; converged; finite-step angular branch uniqueness not certified
+rod_fast,0.02,True,4.7704895589362195e-17,1.3100631690576847e-13,6,brentq,True,verified residual; converged
+rod_fast,0.08,True,4.336808689942018e-17,7.283063041541027e-14,7,brentq,True,verified residual; converged
+rod_fast,0.2,True,6.938893903907228e-18,-5.1514348342607263e-14,8,brentq,True,verified residual; converged
+rod_fast,0.5,True,3.8857805861880476e-17,-2.842170943040401e-14,9,brentq,True,verified residual; converged
+rod_fast,1.0,True,9.43689570931383e-17,6.927791673660977e-14,9,brentq,False,verified residual; converged; finite-step angular branch uniqueness not certified

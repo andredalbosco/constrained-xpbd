@@ -1,0 +1,16 @@
+[
+  {
+    "dataset": "results/fair_cost.csv",
+    "rows": 432,
+    "max_relative_numeric_difference": 0,
+    "column": "",
+    "status": "PASS"
+  },
+  {
+    "dataset": "results/stability.csv",
+    "rows": 108,
+    "max_relative_numeric_difference": 0,
+    "column": "",
+    "status": "PASS"
+  }
+]

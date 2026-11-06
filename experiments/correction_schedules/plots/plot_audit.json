@@ -1,0 +1,13 @@
+{
+  "source_runs": 1809,
+  "unique_keys": 1809,
+  "source_sha256": "0fefee37fd910c959853881bef113774d49fe90df1baf71340c5fc87a0b7ec4a",
+  "guarded_stops": 2,
+  "max_scaled_energy_reconstruction_error": 2.3580059421113095e-15,
+  "max_rms_reconstruction_error": 8.881784197001252e-16,
+  "selected_runs": 270,
+  "audited_trace_groups": 90,
+  "all_linearizations_equal_one": true,
+  "reference_max_position_difference": 9.412549225860287e-12,
+  "reference_max_energy_error": 1.602273869139026e-12
+}

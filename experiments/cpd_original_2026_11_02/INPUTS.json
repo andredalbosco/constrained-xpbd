@@ -1,0 +1,22 @@
+{
+  "primary_publication": "https://doi.org/10.1145/3450626.3459878",
+  "source_status": "Paper-equation implementation; earlier local C++ reference is not authors code",
+  "environment": {
+    "python": "3.13.7",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "inputs_sha256": {
+    "/home/blacknoir/Projects/dynamics-research/archive/resources/papers/Constrained Projective Dynamics.md": "ca43b5a6cde0351826266747085abae5c8f70d13cae980b85fb82e8c3b74e310",
+    "/home/blacknoir/Projects/dynamics-research/experiments/work_balance/baselines.cpp": "14df774bc0e687bc761eb52715f29054b793338aaf1deb8a9b9f15a536a7fa03",
+    "/home/blacknoir/Projects/dynamics-research/experiments/work_balance/baselines.hpp": "cfea006162e84227497b74994907d295c51406a910cb65736be41084fa5e8ab9",
+    "/home/blacknoir/Projects/dynamics-research/src/core/system.hpp": "49cae1558316474439051e446d5745d835b222d1490c2910482533c64988337a",
+    "/home/blacknoir/Projects/constrained-xpbd/experiments/independent_velocity_2026_11_01/results/summary.csv": "60d1216fe68b5a5ff2eb96d9999ee1394ad18c10e84bc80106e6ecbe53abe24b",
+    "/home/blacknoir/Projects/constrained-xpbd/experiments/independent_velocity_2026_11_01/results/trajectories/spring_release_LE_beta1_hz60_s16_eps1e+08.csv": "7685a689d70e58d1d8e515a3ae9eb3b4df762d697b14f003156805f34f497e9d",
+    "/home/blacknoir/Projects/constrained-xpbd/experiments/independent_velocity_2026_11_01/results/trajectories/spring_orbit_LE_beta1_hz60_s16_eps1e+08.csv": "310c6aa0b199e41e0e5b4e34263a78320285a2d4c000a9cbf4edcb834777ec9a",
+    "/home/blacknoir/Projects/constrained-xpbd/experiments/independent_velocity_2026_11_01/results/trajectories/spring_stiff_LE_beta1_hz60_s16_eps1e+08.csv": "b02bc0158ced54012663ea96588d483883e2328333d773994fdb223519ba2643"
+  },
+  "prior_comparison_data": "Reused unchanged; prior solver not rerun; exact free-pair relative vs anchored reduced mass1 match is validated",
+  "archive_policy": "Own sources, reports, trajectories and visual artifacts; __pycache__ excluded; FILES.sha256 hashes final archived files."
+}

@@ -1,0 +1,150 @@
+{
+  "command": [
+    "runner.py",
+    "--duration",
+    "60",
+    "--hz",
+    "60",
+    "--sweeps",
+    "16",
+    "--beta-v",
+    "1",
+    "--epsilon-ratios",
+    "100000000",
+    "--orders",
+    "LE",
+    "--output",
+    "long_horizon",
+    "--trace-first"
+  ],
+  "python": "3.13.7",
+  "numpy": "2.5.4",
+  "actual_energy": ".5*m*dot(returned_v,returned_v) + U(returned_x)",
+  "chord_energy": ".5*m*norm((x_new-x_old)/h)^2 + U(x_new)",
+  "mismatch": "returned_v - (x_new-x_old)/h; never overwritten after a step",
+  "target": "incoming actual physical energy fixed during each step",
+  "refresh": "after every full block",
+  "stationarity": "retained in every block",
+  "epsilon": "epsilon_ratio times initial energy above potential floor; fixed per run",
+  "failure_policy": "stop after solver rejection; offending candidate retained with accepted=0",
+  "baseline_source": "/home/blacknoir/Projects/constrained-xpbd/experiments/block_orders_2026_11_01/results",
+  "baseline_reused_without_solver_reruns": true,
+  "primary_tangency": "diagnostic only; no extra spring tangency constraint",
+  "stall_threshold": "chord speed below 1e-4*l m/s; tail is final accepted second",
+  "scenes": [
+    {
+      "name": "spring_release",
+      "m": 1.0,
+      "k": 100.0,
+      "l": 1.0,
+      "g": [
+        0.0,
+        0.0
+      ],
+      "x0": [
+        1.25,
+        0.0
+      ],
+      "v0": [
+        0.0,
+        0.0
+      ],
+      "rigid": false
+    },
+    {
+      "name": "spring_orbit",
+      "m": 1.0,
+      "k": 100.0,
+      "l": 1.0,
+      "g": [
+        0.0,
+        0.0
+      ],
+      "x0": [
+        1.1,
+        0.0
+      ],
+      "v0": [
+        0.0,
+        0.8
+      ],
+      "rigid": false
+    },
+    {
+      "name": "spring_gravity",
+      "m": 1.0,
+      "k": 100.0,
+      "l": 1.0,
+      "g": [
+        0.0,
+        -9.81
+      ],
+      "x0": [
+        0.55,
+        -1.1
+      ],
+      "v0": [
+        0.4,
+        0.2
+      ],
+      "rigid": false
+    },
+    {
+      "name": "pendulum_release",
+      "m": 1.0,
+      "k": 0.0,
+      "l": 1.0,
+      "g": [
+        0.0,
+        -9.81
+      ],
+      "x0": [
+        0.6051864057360395,
+        -0.7960837985490559
+      ],
+      "v0": [
+        0.0,
+        0.0
+      ],
+      "rigid": true
+    },
+    {
+      "name": "pendulum_kick",
+      "m": 1.0,
+      "k": 0.0,
+      "l": 1.0,
+      "g": [
+        0.0,
+        -9.81
+      ],
+      "x0": [
+        0.3894183423086505,
+        -0.9210609940028851
+      ],
+      "v0": [
+        1.105273192803462,
+        0.4673020107703806
+      ],
+      "rigid": true
+    },
+    {
+      "name": "spring_stiff",
+      "m": 1.0,
+      "k": 1000.0,
+      "l": 1.0,
+      "g": [
+        0.0,
+        0.0
+      ],
+      "x0": [
+        1.1,
+        0.0
+      ],
+      "v0": [
+        0.0,
+        0.8
+      ],
+      "rigid": false
+    }
+  ]
+}

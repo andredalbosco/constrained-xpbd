@@ -1,0 +1,33 @@
+/build*/
+/results/
+
+# Generated experiment traces stay local; retain summaries and audit evidence.
+__pycache__/
+*.pyc
+/experiments/**/*.log
+/experiments/**/*.csv
+!/experiments/**/*summary*.csv
+!/experiments/**/*parity*.csv
+!/experiments/**/*PARITY*.csv
+!/experiments/**/*reference*.csv
+!/experiments/**/*REFERENCE*.csv
+!/experiments/**/*metrics*.csv
+!/experiments/**/*audit*.csv
+!/experiments/**/*selected_runs*.csv
+/experiments/block_orders_2026_11_01/diagnostics/curvature_audit.json
+/experiments/block_orders_2026_11_01/diagnostics/failing_step.json
+/experiments/block_orders_2026_11_01/results/first_step_traces.json
+/experiments/composition_2026_10_31/results/core/summary.csv
+/experiments/composition_2026_10_31/results/solver/summary.csv
+/experiments/composition_2026_10_31/viewer.html
+/experiments/correction_schedules/sweep/summary.csv
+/experiments/cpd_original_2026_11_02/feasibility_diagnostic_results.json
+/experiments/cpd_original_2026_11_02/results/first_step_traces.json
+/experiments/hour_2026_10_31/rigid/viewer.html
+/experiments/round2_2026_10_31/viewer.html
+
+# Generated visual archives are retained locally.
+/experiments/**/*.png
+/experiments/**/*.mp4
+/experiments/**/*.pdf
+/experiments/**/*.html

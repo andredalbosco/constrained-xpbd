@@ -1,0 +1,246 @@
+{
+  "cutoff_utc": "2026-10-31 19:02:30 UTC",
+  "all_processes_stopped": true,
+  "runs": [
+    {
+      "N": 8,
+      "stiffness": 1,
+      "h": 0.03333333333333333,
+      "method": "reduced_GN_polish",
+      "status": "complete",
+      "saved_accepted_steps": 150,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 1,
+      "h": 0.016666666666666666,
+      "method": "reduced_GN_polish",
+      "status": "complete",
+      "saved_accepted_steps": 300,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 10,
+      "h": 0.03333333333333333,
+      "method": "reduced_GN_polish",
+      "status": "complete",
+      "saved_accepted_steps": 150,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 10,
+      "h": 0.016666666666666666,
+      "method": "reduced_GN_polish",
+      "status": "complete",
+      "saved_accepted_steps": 300,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 1,
+      "h": 0.03333333333333333,
+      "method": "reduced_GN_polish",
+      "status": "complete",
+      "saved_accepted_steps": 150,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 1,
+      "h": 0.016666666666666666,
+      "method": "reduced_GN_polish",
+      "status": "complete",
+      "saved_accepted_steps": 300,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 10,
+      "h": 0.03333333333333333,
+      "method": "reduced_GN_polish",
+      "status": "solver_failure",
+      "saved_accepted_steps": 47,
+      "saved_accepted_time": 1.5666666666666667,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 10,
+      "h": 0.016666666666666666,
+      "method": "reduced_GN_polish",
+      "status": "solver_failure",
+      "saved_accepted_steps": 255,
+      "saved_accepted_time": 4.25,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 1,
+      "h": 0.03333333333333333,
+      "method": "full",
+      "status": "complete",
+      "saved_accepted_steps": 150,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 1,
+      "h": 0.016666666666666666,
+      "method": "full",
+      "status": "complete",
+      "saved_accepted_steps": 300,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 10,
+      "h": 0.03333333333333333,
+      "method": "full",
+      "status": "complete",
+      "saved_accepted_steps": 150,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 10,
+      "h": 0.016666666666666666,
+      "method": "full",
+      "status": "complete",
+      "saved_accepted_steps": 300,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 1,
+      "h": 0.03333333333333333,
+      "method": "full",
+      "status": "complete",
+      "saved_accepted_steps": 150,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 1,
+      "h": 0.016666666666666666,
+      "method": "full",
+      "status": "interrupted_by_wall_clock_cutoff",
+      "saved_accepted_steps": 0,
+      "saved_accepted_time": 0,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 10,
+      "h": 0.03333333333333333,
+      "method": "full",
+      "status": "not_started_due_wall_clock_cutoff",
+      "saved_accepted_steps": 0,
+      "saved_accepted_time": 0,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 10,
+      "h": 0.016666666666666666,
+      "method": "full",
+      "status": "not_started_due_wall_clock_cutoff",
+      "saved_accepted_steps": 0,
+      "saved_accepted_time": 0,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 1,
+      "h": 0.03333333333333333,
+      "method": "reduced_exact",
+      "status": "complete",
+      "saved_accepted_steps": 150,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 1,
+      "h": 0.016666666666666666,
+      "method": "reduced_exact",
+      "status": "complete",
+      "saved_accepted_steps": 300,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 10,
+      "h": 0.03333333333333333,
+      "method": "reduced_exact",
+      "status": "solver_failure",
+      "saved_accepted_steps": 2,
+      "saved_accepted_time": 0.06666666666666667,
+      "requested_time": 5
+    },
+    {
+      "N": 8,
+      "stiffness": 10,
+      "h": 0.016666666666666666,
+      "method": "reduced_exact",
+      "status": "complete",
+      "saved_accepted_steps": 300,
+      "saved_accepted_time": 5.0,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 1,
+      "h": 0.03333333333333333,
+      "method": "reduced_exact",
+      "status": "solver_failure",
+      "saved_accepted_steps": 9,
+      "saved_accepted_time": 0.3,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 1,
+      "h": 0.016666666666666666,
+      "method": "reduced_exact",
+      "status": "solver_failure",
+      "saved_accepted_steps": 9,
+      "saved_accepted_time": 0.15,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 10,
+      "h": 0.03333333333333333,
+      "method": "reduced_exact",
+      "status": "solver_failure",
+      "saved_accepted_steps": 0,
+      "saved_accepted_time": 0.0,
+      "requested_time": 5
+    },
+    {
+      "N": 32,
+      "stiffness": 10,
+      "h": 0.016666666666666666,
+      "method": "reduced_exact",
+      "status": "solver_failure",
+      "saved_accepted_steps": 0,
+      "saved_accepted_time": 0.0,
+      "requested_time": 5
+    }
+  ]
+}

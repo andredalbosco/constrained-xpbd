@@ -1,0 +1,19 @@
+{
+  "viewed": [
+    "overview.png",
+    "conditioning.png",
+    "reservoirs.png",
+    "all_methods.png",
+    "stable_candidates.png",
+    "stability.png",
+    "long_horizon.png"
+  ],
+  "checks": [
+    "Readable axes and legends; no footer overlap",
+    "Physical energy excludes reservoirs",
+    "Both energy and positions shown in candidate comparison",
+    "Unstable fixed midpoint excluded from candidates",
+    "Long reference limitations visible",
+    "All-method failures explicitly labeled FAIL"
+  ]
+}

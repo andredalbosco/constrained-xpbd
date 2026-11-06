@@ -1,0 +1,104 @@
+{
+  "main": {
+    "groups": 112,
+    "rows": 537712,
+    "max_energy_reconstruction_error": 0.0,
+    "max_rms_reconstruction_error": 8.881784197001252e-16,
+    "max_cumulative_ledger_error": 6.940785375456539e-13,
+    "max_kinematic_error": 8.881784197001252e-16
+  },
+  "runs": 630,
+  "aborted": [
+    {
+      "case": "spring_release",
+      "method": "EL_rx_raw",
+      "hz": 240.0,
+      "completed": 1.0,
+      "steps": 2400.0,
+      "status": "aborted_safety_limit",
+      "attempted_energy": 1001326876280554.4
+    },
+    {
+      "case": "spring_release",
+      "method": "EL_rx_raw",
+      "hz": 480.0,
+      "completed": 1.0,
+      "steps": 4800.0,
+      "status": "aborted_safety_limit",
+      "attempted_energy": 1.0266894117038358e+18
+    },
+    {
+      "case": "spring_release",
+      "method": "EL_rx_raw",
+      "hz": 960.0,
+      "completed": 1.0,
+      "steps": 9600.0,
+      "status": "aborted_safety_limit",
+      "attempted_energy": 1.0516719548362146e+21
+    },
+    {
+      "case": "pendulum_rest",
+      "method": "EL_rx_raw",
+      "hz": 240.0,
+      "completed": 1866.0,
+      "steps": 2400.0,
+      "status": "aborted_safety_limit",
+      "attempted_energy": 8050140544.028607
+    },
+    {
+      "case": "double_large",
+      "method": "EL_rx_raw",
+      "hz": 240.0,
+      "completed": 8.0,
+      "steps": 2400.0,
+      "status": "aborted_safety_limit",
+      "attempted_energy": 1.5828704082445714e+18
+    },
+    {
+      "case": "double_large",
+      "method": "LE_rx_raw",
+      "hz": 240.0,
+      "completed": 462.0,
+      "steps": 2400.0,
+      "status": "aborted_safety_limit",
+      "attempted_energy": 13307032656.432705
+    },
+    {
+      "case": "double_large",
+      "method": "EL_rx_raw",
+      "hz": 480.0,
+      "completed": 34.0,
+      "steps": 4800.0,
+      "status": "aborted_safety_limit",
+      "attempted_energy": 3097078442.4261303
+    },
+    {
+      "case": "double_large",
+      "method": "LE_rx_raw",
+      "hz": 480.0,
+      "completed": 625.0,
+      "steps": 4800.0,
+      "status": "aborted_safety_limit",
+      "attempted_energy": 2156678007.147128
+    }
+  ],
+  "conditioning": {
+    "rows": 456,
+    "singular_rows": 24,
+    "max_scaling_position_difference": 8.902324067610626e-16,
+    "max_dual_gradient_relative_error": 3.616400049493366e-14
+  },
+  "long": {
+    "groups": 112,
+    "rows": 403312,
+    "max_energy_reconstruction_error": 0.0,
+    "max_rms_reconstruction_error": 0.0,
+    "max_cumulative_ledger_error": 3.255991032347083e-12,
+    "max_kinematic_error": 0.0,
+    "runs": 112,
+    "uncertified_cases": [
+      "double_large"
+    ]
+  },
+  "ledger_only_state_difference": 0.0
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "suite": "results",
+    "runs": 176,
+    "complete": 151,
+    "uncertified": 32
+  },
+  {
+    "suite": "order_results",
+    "runs": 64,
+    "complete": 64,
+    "uncertified": 0
+  },
+  {
+    "suite": "accuracy_results",
+    "runs": 44,
+    "complete": 30,
+    "uncertified": 8
+  },
+  {
+    "suite": "stress_results",
+    "runs": 154,
+    "complete": 111,
+    "uncertified": 14
+  },
+  {
+    "suite": "long_results",
+    "runs": 20,
+    "complete": 20,
+    "uncertified": 0
+  },
+  {
+    "suite": "momentum_results",
+    "runs": 54,
+    "complete": 48,
+    "uncertified": 0
+  },
+  {
+    "suite": "metric_results",
+    "runs": 56,
+    "complete": 56,
+    "uncertified": 0
+  },
+  {
+    "suite": "objectives_results",
+    "runs": 56,
+    "complete": 56,
+    "uncertified": 0
+  },
+  {
+    "suite": "objectives_order_results",
+    "runs": 112,
+    "complete": 112,
+    "uncertified": 0
+  },
+  {
+    "suite": "reaction_order_results",
+    "runs": 120,
+    "complete": 120,
+    "uncertified": 0
+  },
+  {
+    "suite": "equilibria_results",
+    "runs": 160,
+    "complete": 145,
+    "uncertified": 0
+  },
+  {
+    "suite": "equilibria_stable_results",
+    "runs": 40,
+    "complete": 40,
+    "uncertified": 0
+  },
+  {
+    "suite": "momentum_stable_results",
+    "runs": 12,
+    "complete": 11,
+    "uncertified": 0
+  }
+]
